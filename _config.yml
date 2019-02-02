@@ -1,0 +1,71 @@
+# Site settings
+title: "Ilya Malinovsky"
+description: "Infrastructure Lead for Financial Industry"
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Resume settings
+resume_avatar:                  "false"
+resume_name:                    "Ilya Malinovsky"
+resume_title:                   "Financial Infrastructure Lead"
+resume_include_title:           false
+
+# used for the contact button in _layouts/resume.html
+resume_contact_email:           "ilya.malinovsky@gmail.com"
+
+# the next two items are used for schema itemprops in _layouts/resume.html
+resume_contact_telephone:       "(631)4561-222"
+resume_contact_address:         "Commack, NY"
+
+resume_header_contact_info:     "New York &bull; (631) 456-1222 &bull; ilya.malinovsky@gmail.com"
+display_header_contact_info:    "true"
+
+resume_header_intro: |
+  <b>Accomplished infrastructure engineer and manager</b> combines rare blend of business acumen, industry-recognized technological expertise,
+  and cross-functional team leadership to provide global solutions for financial IT infrastructure organizations. <b>Global Head of Systems and
+  Network Architecture</b> of a successful proprietary trading firm. Former <b>Global Head of Low Latency Infrastructure Engineering and Deployment</b>
+  for one of the largest in the world electronic trading environments. Trusted partner of trading teams.
+  Offers managerial and hands-on expertise in technology vision, strategy, and implementation; pioneered global cutting-edge, precedent-setting 
+  technologies and solutions. Strength in cross-cultural communications and multicultural literacy. Academic degrees in IT and sciences.
+
+# use "yes" to display the email contact button,
+# "no" to display an "I'm not looking for work" message,
+# or remove the resume_looking_for_work option entirely
+# to leave blank
+# resume_looking_for_work:        "no"
+
+# Decide which sections to use
+# comment out to hide
+resume_section_experience:      true
+resume_section_education:       true
+resume_section_projects:        false
+resume_section_skills:          true
+resume_section_recognition:     false
+resume_section_links:           false
+resume_section_associations:    false
+resume_section_interests:       true
+
+# Resume social links
+# uncomment the options you wish to display, and add your own URL
+resume_social_links:
+#  resume_github_url:            "https://github.org/imalinovsky"
+  resume_bitbucket_url:         "https://bitbucket.org/imalinovsky"
+# resume_twitter_url:           "http://twitter.com/jglovier"
+# resume_dribbble_url:          "https://dribbble.com/jag"
+# resume_facebook_url:          "insert Facebook URL here"
+  resume_linkedin_url:          "https://www.linkedin.com/in/malinovsky/"
+# resume_instagram_url:         "insert your Instagram URL here"
+# resume_website_url:           "http://imalinovsky.us"
+# resume_medium_url:            "https://medium.com/@jglovier"
+resume_print_social_links:      true
+
+# Design settings
+resume_theme:                   default
+
+# Note: when editing locally, remember to restart
+# your Jekyll server when you edit this file. Changes
+# to _config.yml are only recognized when the server starts
