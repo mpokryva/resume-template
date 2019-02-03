@@ -35,7 +35,7 @@
       <li>MIFID 2 compliance regulation requirements for investment services across the 31 EU countries</li>
       <li>Intel’s Cache Allocation Technology on trading servers to decrease cache misses and improve deterministic
           behavior, reducing median latency up to 7x for some flows</li>
-      <li>Authored a comprehensive “Tuning Guide for Trading Teams” that summarizes proprietary performance and capacity
+      Authored a comprehensive “Tuning Guide for Trading Teams” that summarizes proprietary performance and capacity
           guidelines, providing implementation and measurement methodologies to optimize compute of a trading platform
     </ul>
 
