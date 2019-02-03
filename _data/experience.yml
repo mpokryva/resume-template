@@ -4,10 +4,10 @@
   position: Global Head of Systems and Network Architecture
   duration: 2016 &mdash; Present
   summary: |
-    Own firm’s global compute, networks design, and long-term strategy & architecture. Spearhead
+    Own firm’s global compute, networks design, and long-term infrastructure strategy and architecture. Spearhead
     research, testing, selection, implementation, and maintenance of cutting-edge, ultra-low-latency
-    server and network technologies. Lead a team of highly experienced network and Linux Architects
-    and a second team of global System Engineers responsible for production support of the firm’s Trading Plant.
+    server and network technologies. Lead a team of highly experienced network and Linux architects
+    and a global team of System Engineers responsible for production support of the firm’s Trading Plant.
     Interact daily with proprietary trading teams and brokerage business to identify requirements,
     oversee implementation, and deliver a final product. Architect large-scale research and development
     environment utilizing HPC/HTC and cloud-scale tools. Possess a thorough understanding of most
@@ -16,31 +16,31 @@
     <ul>
       <li>Next generation of servers for trading platforms. Responsible for research, benchmarking, certification
           and instrumentation of global compute. Provide solutions for diverse latency, capacity and throughput
-          demands of Tower’s compute farm and co-located trading<br>
+          demands of Tower’s compute farm and co-located trading
       <li>AWS platform optimized for high frequency electronic trading on cloud-based exchanges. The platform is
           a hybrid combined with premise-based trading environment, redistributing market data and strategy signals
           across the globe over AWS and proprietary links. It provides a truly unique access to exchanges previously
-          considered unsuitable for colocation or low latency<br>
+          considered unsuitable for colocation or low latency
       <li>DevOps platform to deploy and manage complex global infrastructure based on automation, continuous testing,
           integration and deployment, self healing and traceability
       <li>FPGA server and network ecosystem that facilitate development, deployment and operation of custom hardware
           solutions. Built an advanced development instrumentation, implemented risk controls and addressed unique
-          challenges introduced by hardware-accelerated systems<br>
+          challenges introduced by hardware-accelerated systems
       <li>High performance network between Tower and Google’s compute and container’s infrastructure (GCE and GKE).
-          Cloud-based and hybrid storage, data acceleration and security.<br>
+          Cloud-based and hybrid storage, data acceleration and security
       <li>Data acquisition, timestamping, and aggregation network and servers to obtain and persist data from
-          exchange cross connects and WAN links at line rate (up to 40G)<br>
+          exchange cross connects and WAN links at line rate (up to 40G)
       <li>Configuration platform for desktops and servers (based on cfengine and Salt), enforced segregation of
           configuration data from code, externalizing complex configuration via Web-based interfaces<br>
       <li>MIFID 2 compliance regulation requirements for investment services across the 31 EU countries<br>
       <li>Intel’s Cache Allocation Technology on trading servers to decrease cache misses and improve deterministic
-          behavior, reducing median latency up to 7x for some flows<br>
+          behavior, reducing median latency up to 7x for some flows
       <li>Authored a comprehensive “Tuning Guide for Trading Teams” that summarizes proprietary performance and capacity
           guidelines, providing implementation and measurement methodologies to optimize compute of a trading platform
     </ul>
 
 # Head of Low Latency Infrastructure Engineering
-- company: Cerdit Suisse Group, New York, NY
+- company: Credit Suisse Group, New York, NY
   position: Global Head of Low Latency Infrastructure Engineering
   duration:  2013 &mdash; 2016
   summary: |
@@ -58,12 +58,12 @@
     <ul>
         <li>Architected and managed deployments of the next generation infrastructure for:
         <ul>
-             <li>Largest dark pool in the world (Credit Suisse Crossfinder)
-             <li>Leading ultra-low latency trading plant (smart order router, pre-trade risk engines and algo
-                 infrastructure)
-             <li>High performance market data ticker plant handling the entire universe of US Equities and other markets
-             <li>Trading, surveillance and compliance platforms for the proprietary trading/systematic market
-                 making business units
+          <li>Largest dark pool in the world (Credit Suisse Crossfinder)
+          <li>Leading ultra-low latency trading plant (smart order router, pre-trade risk engines and algo
+              infrastructure)
+          <li>High performance market data ticker plant handling the entire universe of US Equities and other markets
+          <li>Trading, surveillance and compliance platforms for the proprietary trading/systematic market
+              making business units
         </ul>
         <li>Initiated, architected, and supervised venue connectivity migration of all US markets to 10G end-to-end
             infrastructure. Improved latency by 20-300%, depending on the exchange. Led the team to develop
@@ -88,10 +88,8 @@
             and enforced standardization of the hardware and its configuration
     </ul>
 
-
-
 # Portfolio Manager
-- company: Cerdit Suisse Group, New York, NY
+- company: Credit Suisse Group, New York, NY
   position: Global Head of Low Latency Infrastructure Engineering
   duration:  2011 &mdash; 2013
   summary: |
