@@ -16,28 +16,29 @@
     <ul>
       <li>Next generation of servers for trading platforms. Responsible for research, benchmarking, certification
           and instrumentation of global compute. Provide solutions for diverse latency, capacity and throughput
-          demands of Tower’s compute farm and co-located trading
+          demands of Tower’s compute farm and co-located trading</li>
       <li>AWS platform optimized for high frequency electronic trading on cloud-based exchanges. The platform is
           a hybrid combined with premise-based trading environment, redistributing market data and strategy signals
           across the globe over AWS and proprietary links. It provides a truly unique access to exchanges previously
-          considered unsuitable for colocation or low latency
+          considered unsuitable for colocation or low latency</li>
       <li>DevOps platform to deploy and manage complex global infrastructure based on automation, continuous testing,
-          integration and deployment, self healing and traceability
+          integration and deployment, self healing and traceability</li>
       <li>FPGA server and network ecosystem that facilitate development, deployment and operation of custom hardware
           solutions. Built an advanced development instrumentation, implemented risk controls and addressed unique
-          challenges introduced by hardware-accelerated systems
+          challenges introduced by hardware-accelerated systems</li>
       <li>High performance network between Tower and Google’s compute and container’s infrastructure (GCE and GKE).
-          Cloud-based and hybrid storage, data acceleration and security
+          Cloud-based and hybrid storage, data acceleration and security</li>
       <li>Data acquisition, timestamping, and aggregation network and servers to obtain and persist data from
-          exchange cross connects and WAN links at line rate (up to 40G)
+          exchange cross connects and WAN links at line rate (up to 40G)</li>
       <li>Configuration platform for desktops and servers (based on cfengine and Salt), enforced segregation of
-          configuration data from code, externalizing complex configuration via Web-based interfaces<br>
-      <li>MIFID 2 compliance regulation requirements for investment services across the 31 EU countries<br>
+          configuration data from code, externalizing complex configuration via Web-based interfaces</li>
+      <li>MIFID 2 compliance regulation requirements for investment services across the 31 EU countries</li>
       <li>Intel’s Cache Allocation Technology on trading servers to decrease cache misses and improve deterministic
-          behavior, reducing median latency up to 7x for some flows
+          behavior, reducing median latency up to 7x for some flows</li>
       <li>Authored a comprehensive “Tuning Guide for Trading Teams” that summarizes proprietary performance and capacity
           guidelines, providing implementation and measurement methodologies to optimize compute of a trading platform
     </ul>
+
 
 # Head of Low Latency Infrastructure Engineering
 - company: Credit Suisse Group, New York, NY
@@ -58,34 +59,34 @@
     <ul>
         <li>Architected and managed deployments of the next generation infrastructure for:
         <ul>
-          <li>Largest dark pool in the world (Credit Suisse Crossfinder)
+          <li>Largest dark pool in the world (Credit Suisse Crossfinder)</li>
           <li>Leading ultra-low latency trading plant (smart order router, pre-trade risk engines and algo
-              infrastructure)
-          <li>High performance market data ticker plant handling the entire universe of US Equities and other markets
+              infrastructure)</li>
+          <li>High performance market data ticker plant handling the entire universe of US Equities and other markets</li>
           <li>Trading, surveillance and compliance platforms for the proprietary trading/systematic market
-              making business units
-        </ul>
+              making business units</li>
+        </ul></li>
         <li>Initiated, architected, and supervised venue connectivity migration of all US markets to 10G end-to-end
             infrastructure. Improved latency by 20-300%, depending on the exchange. Led the team to develop
             highly optimized Linux and Windows builds to serve electronic trading clients. Navigated IT Risk and
-            Security Architecture processes to achieve compliance with regulations and bank’s standards
-        <li>Worked with application development team to achieve 70% latency reduction in DMA pre-trade risk checks
+            Security Architecture processes to achieve compliance with regulations and bank’s standards</li>
+        <li>Worked with application development team to achieve 70% latency reduction in DMA pre-trade risk checks</li>
         <li>Orchestrated migration of Carteret, Mahwah, Weehawken, and Secaucus colocations from the legacy
-            enterprise-oriented architecture to low latency designs
+            enterprise-oriented architecture to low latency designs</li>
         <li>Reengineered SFTI connectivity to eliminate inefficient routing and indirect connections and consolidated
-            all NYSE/ARCA/SFTI on the LCN network in Mahwah
+            all NYSE/ARCA/SFTI on the LCN network in Mahwah</li>
         <li>Engineered and supervised deployment of micro wave (from Chicago to Weehawken for CME-originated market
             data) and millimeter wave (from Carteret to Weehawken for NASDAQ market data and order execution)
-            connectivity <br>
+            connectivity</li>
         <li>Formulated requirements and managed deployment of multiple-audit-point remediation projects,
-            including FedHST (for High Frequency Trading) and RegSCI (Alternative Trading Systems)
+            including FedHST (for High Frequency Trading) and RegSCI (Alternative Trading Systems)</li>
         <li>Pioneered the use of solid state SAN frames for the firm’s high performance compute, specifically,
-            algorithmic trading, dark and lit pools
+            algorithmic trading, dark and lit pools</li>
         <li>Supervised deployment of risk analytics platform designed to aggregate company-wide risk and
-            to prevent unauthorized trading
+            to prevent unauthorized trading</li>
         <li>Supervised development and implementation of low latency-optimized RHEL build and defined guidelines
             for hardware selection and tuning. Reviewed benchmark results, set roadmap and priorities,
-            and enforced standardization of the hardware and its configuration
+            and enforced standardization of the hardware and its configuration</li>
     </ul>
 
 
@@ -99,20 +100,20 @@
     capabilities. Supervised a team of project managers executing projects with an annual budget of over $50M.
     <ul>
       <li>Reduced Low Latency infrastructure TCO by $6M in year one and an additional $7M in year two, delivering
-          full scope and 10% more savings than were required by the firm’s financial objective
+          full scope and 10% more savings than were required by the firm’s financial objective</li>
       <li>Executed a successful portfolio of projects to establish or increase Credit Suisse presence in major
           US colocations – NYSE (Mahwah NJ3), NASDAQ (Carteret NJ1), BATS (Weehawken NJ2), Direct Edge (Secaucus NY4),
-          CME (Aurora CH5), and ICE (Cermak CH4)
+          CME (Aurora CH5), and ICE (Cermak CH4)</li>
       <li>Spearheaded a venue connectivity consolidation project for the entire firm from diverse to low latency
           routes, including redundancy and DR capabilities. Improved service to the bank’s clients and achieved
-          $2.1M savings annually
+          $2.1M savings annually</li>
       <li>Overhauled the firm’s relationship with major vendors – Savvis, Fixnetix, NYSE, Interactive Data/7Tics
           and others. Refined the scope of engagement, identified unused and underused infrastructure and initiated
-          projects to optimize third party infrastructure in various colocations
+          projects to optimize third party infrastructure in various colocations</li>
       <li>Supervised initiation and execution of FID electronic trading projects, including electronic FX trading
-          (in New York, London and Tokyo) and Listed Derivatives (Aurora)
+          (in New York, London and Tokyo) and Listed Derivatives (Aurora)</li>
       <li>Lead project delivery team for the initial build out and expansion of the Credit Suisse subsidiary –
-          FastMatch (www.fastmatchfx.com)
+          FastMatch (www.fastmatchfx.com)</li>
     </ul>
 
 # Product Manager
@@ -128,20 +129,20 @@
     specifications, integrations, and deployments to cross-functional teams to support business objectives.
     <ul>
       <li>Architected world’s first IMS-based Contact Center, and engineered solution for the nation’s first
-          telemedicine and managed healthcare hosted Contact Centers
+          telemedicine and managed healthcare hosted Contact Centers</li>
       <li>Designed architecture for world’s 5 largest multi-tenant Contact Centers within British Telecom,
-          France Telecom, Telefonica (Spain), Telcel (Mexico), and PLDT (Philippines)
+          France Telecom, Telefonica (Spain), Telcel (Mexico), and PLDT (Philippines)</li>
       <li>Established Sales Engineer Support Center, consolidating knowledge and resources from the U.S., Europe,
-          and Asia
-      <li>Spearheaded product redesign, leading to a 100% increase in scalability and marked stability
+          and Asia</li>
+      <li>Spearheaded product redesign, leading to a 100% increase in scalability and marked stability</li>
       <li>Drove company achievement of 34 top industry awards, including:
       <ul>
         <li>Customer Interaction Solutions Magazine’s Product of the Year Award for 5 consecutive years, as well
-            as its IP Contact Center Technology Pioneer Award, 2009
-        <li>Internet Telephony Magazine’s Product of the Year Award, 2007 and 2008
+            as its IP Contact Center Technology Pioneer Award, 2009</li>
+        <li>Internet Telephony Magazine’s Product of the Year Award, 2007 and 2008</li>
         <li>Long Island Software Award (LISA) presented by the Long Island Software and Technology Network
-            (LISTnet), 2010
+            (LISTnet), 2010</li>
         <li>Technology Marketing Corporation (TMC) Labs Innovation Award for 2008, as well as its Internet Telephony
-            Conference Best of Show Award, 2007 and 2008
-      </ul>
+            Conference Best of Show Award, 2007 and 2008</li>
+      </ul></li>
     </ul>
