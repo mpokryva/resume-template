@@ -186,11 +186,11 @@
         </header>
 
         <div class="resume-item">
-          <ul class="resume-item-list">
+          <p class="resume-item-copy">
             {% for interest in site.data.interests %}
-            <li>{{ interest.description }}</li>
+            {{ interest.description }}
             {% endfor %}
-          </ul>
+          </p>
         </div>
 
       </section>
