@@ -1,6 +1,6 @@
 # Resume template
 
-This is a template of my resume
+This is a template of my resume. It is partially my development, partially forked from other repos
 
 ## Docs
 
@@ -37,17 +37,6 @@ git push
 Bitbucket will host it for free if you create a repository called <your_username>.bitbucket.io. Put the contents
 of the /public in the root of this repository. The URL will be https://<your_username>.bitbucket.io
 
-
-## Roadmap
-
-A feature roadmap is [available here](https://github.com/jglovier/resume-template/projects/1). If you features suggestions, please [open a new issue](https://github.com/jglovier/resume-template/issues/new).
-
-## Contributing
-
-If you spot a bug, or want to improve the code, or even make the dummy content better, you can do the following:
-
-1. [Open an issue](https://github.com/jglovier/resume-template/issues/new) describing the bug or feature idea
-2. Fork the project, make changes, and submit a pull request
 
 ## License
 
