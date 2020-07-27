@@ -3,7 +3,10 @@
 
   {% include head.html %}
 
+
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+  
+      <!-- {% include header.html %} -->
 
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
@@ -75,7 +78,7 @@
       <!-- begin Education -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Education</h2>
+          <h2>Educationiones</h2>
         </header>
 
         {% for education in site.data.education %}

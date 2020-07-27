@@ -1,6 +1,6 @@
 # Site settings
-title: "Ilya Malinovsky"
-description: "Infrastructure Lead for Financial Industry"
+title: "Miki Pokryvailo"
+description: "Backend Software Engineer"
 
 # Build settings
 markdown: kramdown
@@ -10,18 +10,18 @@ sass:
 
 # Resume settings
 resume_avatar:                  "false"
-resume_name:                    "Ilya Malinovsky"
-resume_title:                   "Financial Infrastructure Lead"
+resume_name:                    "Miki Pokryvailo"
+resume_title:                   "Backend Software Engineer" #TODO: Change this.
 resume_include_title:           false
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "ilya.malinovsky@gmail.com"
+resume_contact_email:           "mpokryva@gmail.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_telephone:       "(631)4561-222"
-resume_contact_address:         "Commack, NY"
+resume_contact_telephone:       "(631) 664-1379"
+resume_contact_address:         "Mountain View, CA"
 
-resume_header_contact_info:     "New York &bull; (631) 456-1222 &bull; ilya.malinovsky@gmail.com"
+resume_header_contact_info:     "Mountain View &bull; (631) 664-1379 &bull; mpokryva@gmail.com"
 display_header_contact_info:    "true"
 
 resume_header_intro: |
