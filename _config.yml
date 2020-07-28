@@ -9,7 +9,7 @@ sass:
   style: compressed
 
 # Resume settings
-resume_avatar:                  "false"
+resume_avatar:                  "true"
 resume_name:                    "Miki Pokryvailo"
 resume_title:                   "Backend Software Engineer" #TODO: Change this.
 resume_include_title:           false

@@ -1,17 +1,10 @@
 # Jobs
 # Global Head of Systems and Network Architecture
-- company: Tower Research Capital, New York, NY
-  position: Global Head of Trading and Research Compute, Director
-  duration: 2016 &mdash; Present
+- company: Confluent, Mountain View, CA 
+  position: Backend Software Engineer 
+  duration: August 2019 &mdash; Present
   summary: |
-    Own firm’s global compute (trading and research), networks design, and long-term infrastructure strategy and 
-    architecture. Spearhead research, testing, selection, implementation, and maintenance of cutting-edge, 
-    ultra-low-latency server and network technologies. Lead a team of highly experienced network and Linux architects
-    and a global team of System Engineers responsible for production support of the firm’s Trading and Research Plants.
-    Interact daily with proprietary trading teams and brokerage business to identify requirements, oversee implementation, 
-    and deliver a final product. Architect large-scale research and development environment utilizing HPC/HTC and 
-    cloud-scale tools. Possess a thorough understanding of most current technologies and trends in electronic trading. 
-    Individual hands-on engineering contribution is 50%<br>
+    Hi there<br>
     Architect, manage implementation and continued operation of:
     <ul>
       <li>Next generation of servers for trading platforms. Responsible for research, benchmarking, certification

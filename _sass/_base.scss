@@ -5,12 +5,19 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-b, strong {
-   color: #7F00FF;
+h2, h3, h4, strong, b {
+   //color: #7500ff;
+   //color: #00b7f9;
+   color: #3498DB;
+   color: #16a085;
 }
 
 html {
-  background: $white;
+  //background: $white;
+  //background: #fff8e7;
+    background: #fff8e9;
+    background: #fff8f5;
+    background: #fff3ed;
 }
 
 body{
