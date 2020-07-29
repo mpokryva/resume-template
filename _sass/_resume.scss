@@ -26,18 +26,12 @@
 
 #top { padding: 1.5rem 0;
   padding-top: 0;
-  .gradient-header {
+  #gradient-header {
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   }
-  
 
-  .image-container: {
-    position: fixed;
-    top: 0px;
-  }
-
-  .gradient-header {
-    //float: left;
+  #gradient-header {
+    float: left;
     background: rgb(117,0,255);
     //background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
     background: #d6e5fa;
@@ -45,34 +39,28 @@
     color: #333;
     font-family: sans-serif;
     overflow: hidden;
-    padding: 0px 20px;
+    padding: 0px 20px 0px;
     position: relative;
     text-align: left;
     text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
 
-    .header-content {
-      margin-left: 100px;
-      width: 30%;
-    }
-
-    .header-image-1 {
-      width: 20%;
-      display: block;
+    #header-content {
+      width: 50%;
       margin-left: auto;
       margin-right: auto;
-      height: auto;
+      margin-bottom: 300px;
+      text-align: center;
+      height: 70%;
     }
-
 
     .header-name {
       @include sans;
       font-size: 3rem;
-      //text-align: center;
       position: relative;
-      bottom: 2em;
+      margin-top: 30px;
+      margin-bottom: 30px;
       letter-spacing: -.15rem;
       line-height: 1;
-      margin: 1rem 0 0;
     }
 
     p {
@@ -80,19 +68,38 @@
       font-size: 1.5rem;
       margin-top: 0.5em;
     }
-    .avatar {
+    
+    #blurb {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+
+    #avatar {
       width: 250px;
       max-width: 100%;
       overflow: hidden;
       @include border-radius(50%);
-      margin: 0 auto;
+      margin: auto auto;
       display: block;
       position: relative;
-      bottom: 200px;
+      margin-top: 50px;
+      margin-bottom: 30px;
     }
 
   }
 
+  #image-container: {
+    position: relative;
+  }
+
+  .header-image-1 {
+    position: relative;
+    width: 20%;
+    bottom: 230px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .header-contact-info {
     @include sans;

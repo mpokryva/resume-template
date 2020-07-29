@@ -7,18 +7,19 @@
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
     <section id="top">
-      <div class="gradient-header">
-        <div class="header-content"> 
+      <div id="gradient-header">
+        <div id="header-content">
           <!-- You can turn off the avatar in _config.yml by setting to false -->
           {% if site.resume_avatar == 'true' %}
-          <img src="images/avatar1.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+          <img src="images/avatar1.jpg" alt="my photo" class="no-print" itemprop="image" id="avatar">
           {% endif %}
           <h1 class="header-name" itemprop="name">{{ site.data.header.name }}</h1>
-          <p itemprop="name">{{ site.data.header.blurb }}</p>
-          <!--</div>-->
+          <div id="blurb">
+              <p> {{ site.data.header.blurb }}</p>
+          </div>
         </div>
       </div>
-      <div class="image-container">
+      <div id="image-container">
         <img src="images/undraw_hacker_mindset_gjwq.svg" class="header-image-1" itemprop="image">
       </div>
       <div class="wrapper" itemscope itemtype="http://schema.org/Person">
