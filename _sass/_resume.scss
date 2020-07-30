@@ -34,9 +34,11 @@
     float: left;
     background: rgb(117,0,255);
     //background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
-    background: #d6e5fa;
+    //background: #d6e5fa;
+    //background: #94d8ff;
+    background: #B7E5FF;
     background-size: cover;
-    color: #333;
+    color: #406098;
     font-family: sans-serif;
     overflow: hidden;
     padding: 0px 20px 0px;
@@ -99,6 +101,7 @@
   }
 
   #header-image-1 {
+    margin-left: 5%;
     bottom: 175px; 
   }
   
@@ -111,12 +114,11 @@
   }
   
   #header-image-4 {
-    bottom: 300px;
-    margin-left: 5%;
+    bottom: 275px;
   }
 
   #header-image-5 {
-    bottom: 330px;
+    bottom: 340px;
   }
 
   .header-contact-info {
