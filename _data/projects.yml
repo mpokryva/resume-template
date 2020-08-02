@@ -2,7 +2,7 @@
   duration: July 2019 &mdash; August 2019
   description: |
     <ul>
-    <li>Wrote a paper on using Convolutional Neural Networks (CNNs) to reconstruct 3D Bézier Surfaces from 2D grayscale images.</li>
+    <li>Wrote a <a href="https://github.com/mpokryva/bezier-surface-cnn">paper</a> on using Convolutional Neural Networks (CNNs) to reconstruct 3D Bézier Surfaces from 2D grayscale images.</li>
     <li>Independently conducted background research, and designed and implemented neural nets using the Keras framework.</li>
     </ul>
 

@@ -5,19 +5,28 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: $navy;
+}
+
 h2, h3, h4, strong, b {
-   //color: #7500ff;
-   //color: #00b7f9;
-   color: #406098;
- //  color: #16a085;
+  //color: #7500ff;
+  //color: #00b7f9;
+  color: $navy;
+  //  color: #16a085;
 }
 
 html {
   //background: $white;
   //background: #fff8e7;
-//    background: #fff8e9;
-//    background: #fff8f5;
-//    background: #fff3ed;
+  //    background: #fff8e9;
+  //    background: #fff8f5;
+  //    background: #fff3ed;
 }
 
 body{
@@ -45,12 +54,12 @@ body{
 .group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
 
 ::-moz-selection {
-    background: #406098;
-    color: #fff;
-    text-shadow: none;
+  background: #406098;
+  color: #fff;
+  text-shadow: none;
 }
 ::selection {
-    background: #406098;
-    color: #fff;
-    text-shadow: none;
+  background: #406098;
+  color: #fff;
+  text-shadow: none;
 }
