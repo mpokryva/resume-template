@@ -1,16 +1,28 @@
-# Projects
-# uncomment the urls if you wish to display them, and add your own URL
+- project: End-to-End 3D Bézier Surface Reconstruction Using CNNs
+  duration: July 2019 &mdash; August 2019
+  description: |
+    <ul>
+    <li>Wrote a paper on using Convolutional Neural Networks (CNNs) to reconstruct 3D Bézier Surfaces from 2D grayscale images.</li>
+    <li>Independently conducted background research, and designed and implemented neural nets using the Keras framework.</li>
+    </ul>
 
-# jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
-  # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+- project: API Performance Grading System 
+  duration: February 2019 &mdash; May 2019
+  description: |
+    <ul>
+    <li>Worked in a small team as an undergraduate TA of a cloud computing course (CSE 356) to build an automated API
+    performance grading system.</li>
+    <li>The system was responsible for orchestrating several machines to generate load, aggregate latency results, and grade the APIs accordingly.</li>
+    <li>Implemented the fuzzed load testing mechanism, which was the core logic of the system, from scratch. I also implemented server-to-server communication using RabbitMQ, and designed some MongoDB schemas.</li>
+    </ul>
 
-# Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
-  # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+- project: Cloud-Based High Performance Social Networking API
+  duration: March 2018 &mdash; May 2018
+  description: |
+    <ul>
+    <li>Implemented a social networking API in Go with the functionality to authenticate, post binary and text data, follow posts
+    and users, and perform complex searches on tweets.
+    <li>Designed a distributed microservice architecture and automated its deployments with AWS EC2 and Ansible.
+    <li>Used Nginx load balancing, a sharded MongoDB cluster, Elasticsearch, and a Memcached layer to achieve low latency query
+    times under loads of hundreds of requests/s.
+    </ul>

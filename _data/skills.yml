@@ -1,20 +1,13 @@
-# Skills
+- skill: Languages 
+  description:
+    Proficient in Go, Java, and Python. Intermediate in Bash and JavaScript.
 
-# Financial markets, technology and innovation
-- skill: Financial markets, technology and innovation
-  description: Deep understanding of what is and is not important to trading teams, portfolio managers, peer
-               technologists, exchanges and vendors. Years of excellent relationship with trading and technology
-               communities
+- skill: Infrastructure
+  description:
+    Linux, Postgres, MongoDB, AWS (EC2, ELB, Neptune), Nginx/Apache, Elasticsearch, Memcached, Ansible, Protobuf/gRPC, OpenAPI, JSON:API, Node.js.
 
-# Technology leadership
-- skill: Hands-on technology leadership
-  description: Expert level knowledge on vast majority of the topics of performance, throughput and latency. More
-               than a decade as a developer, systems administrator, team lead and technical product manager. This very
-               resume is developed and delivered using full stack with CI/CD
 
-# Team  leadership
-- skill: Keeping teams happy and productive
-  description: A decade as a manager of sizeable teams in a startup, a telecom, an investment bank and a hedge fund.
-               Versatile, low-maintenance manager and a colleague, never low energy, never passive and never agressive.
-               Track record of making and running highly performing teams, where many individuals are more skilled than
-               me
+
+- skill: Other
+  description: 
+    Keras, neural networks (mostly CNNs), OpenCV, and PID control. I would love to tackle more challenges involving machine learning.

@@ -23,7 +23,7 @@
         <img src="images/undraw_working_from_anywhere_ub67.svg" id="header-image-1" class="header-image" itemprop="image">
         <img src="images/undraw_a_day_off_w9ex.svg" id="header-image-2" class="header-image" itemprop="image">
         <img src="images/undraw_stand_out_1oag.svg" id="header-image-3" class="header-image" itemprop="image">
-        <img src="images/undraw_thought_process_67my.svg" id="header-image-4" class="header-image" itemprop="image">
+        <img src="images/undraw_mic_drop_uuyg.svg" id="header-image-4" class="header-image" itemprop="image">
         <img src="images/undraw_working_out_6psf.svg" id="header-image-5" class="header-image" itemprop="image">
       </div>
       <div class="wrapper" itemscope itemtype="http://schema.org/Person">
@@ -75,7 +75,7 @@
         {% for job in site.data.experience %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &vert; {{ job.duration }}</h4>
           <p class="resume-item-copy">{{ job.summary }}</p>
         </div><!-- end of resume-item -->
         {% endfor %}
@@ -124,7 +124,7 @@
         <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
           <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
           <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ project.role }} {{ project.duration }}</h4>
           <p class="resume-item-copy">{{ project.description }}</p>
         </div>
         {% endfor %}
