@@ -26,7 +26,7 @@
         <img src="images/undraw_working_from_anywhere_ub67.svg" id="header-image-1" class="header-image" itemprop="image">
         <img src="images/undraw_a_day_off_w9ex.svg" id="header-image-2" class="header-image" itemprop="image">
         <img src="images/undraw_stand_out_1oag.svg" id="header-image-3" class="header-image" itemprop="image">
-        <img src="images/undraw_mic_drop_uuyg.svg" id="header-image-4" class="header-image" itemprop="image">
+        <img src="images/undraw_feeling_proud_qne1.svg" id="header-image-4" class="header-image" itemprop="image">
         <img src="images/undraw_working_out_6psf.svg" id="header-image-5" class="header-image" itemprop="image">
       </div>
       <div class="wrapper" itemscope itemtype="http://schema.org/Person">
@@ -257,29 +257,5 @@
           <p class="footer-line">Feel free to <a href="https://bitbucket.org/imalinovsky/resume-template">fork</a>, no attribution required</p>
         </footer>
       </div>
-      <script>  
-        window.onresize = rotateImg;
-window.onload = rotateImg;
-
-
-function rotateImg() {
-  let header = document.getElementById("gradient-header");
-  let imgContainer = document.getElementById("image-container");
-  console.log(header.clientHeight);
-  console.log(header.clientWidth);
-  const width = header.clientWidth;
-  const height = header.clientHeight * 0.3 // hardcoded clip path.
-  const tan_ang = Math.tan(height / width);
-  console.log(tan_ang);
-  const angle = Math.atan(tan_ang) * (180 / Math.PI);
-  console.log(`-${angle}deg`);
-  imgContainer.style.transform = `rotate(-${angle}deg)`;
-  const imgs = document.getElementsByClassName("header-image");
-  for (let img of imgs) {
-    console.log("hi");
-    img.style.transform = `rotate(${angle}deg`;
-  }
-}
-      </script>
   </body>
 </html>

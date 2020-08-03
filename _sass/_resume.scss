@@ -96,26 +96,24 @@
     }
   }
 
-  .project-image {
-    border-radius: 30%;
-  }
-
-
   #image-container {
     position: relative;
-    margin-top: -20px;
-    transform: rotate(-9.74deg); // Calculated with some trig :)
-    bottom: 190px;
+    transform: rotate(-6deg);
     text-align: center;
+    margin-top: -12%;
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-bottom: 3%;
   }
 
 
   .header-image {
+    transform: rotate(6deg);
     position: relative;
-    width: 200px;
-    height: 200px;
-    margin-left: 50px;
-    margin-right: 50px;
+    height: auto;
+    width: 12%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 
   #header-image-1 {
