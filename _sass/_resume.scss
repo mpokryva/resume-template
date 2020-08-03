@@ -35,13 +35,11 @@
   }
 
   #gradient-header {
-    float: left;
     background: rgb(117,0,255);
     //background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
     //background: #d6e5fa;
     //background: #94d8ff;
     background: $light-blue;
-    background-size: cover;
     color: #406098;
     font-family: sans-serif;
     overflow: hidden;
