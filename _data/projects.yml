@@ -1,8 +1,9 @@
 - project: End-to-End 3D Bézier Surface Reconstruction Using CNNs
   duration: July 2019 &mdash; August 2019
+  url: https://github.com/mpokryva/bezier-surface-cnn/blob/master/Bezier_Surface_Reconstruction.pdf
   description: |
     <ul>
-    <li>Wrote a <a href="https://github.com/mpokryva/bezier-surface-cnn">paper</a> on using Convolutional Neural Networks (CNNs) to reconstruct 3D Bézier Surfaces from 2D grayscale images.</li>
+    <li>Wrote a paper on using Convolutional Neural Networks (CNNs) to reconstruct 3D Bézier Surfaces from 2D grayscale images.</li>
     <li>Independently conducted background research, and designed and implemented neural nets using the Keras framework.</li>
     </ul>
 
@@ -17,6 +18,7 @@
     </ul>
 
 - project: Cloud-Based High Performance Social Networking API
+  url: https://github.com/mpokryva/TwitterClone
   duration: March 2018 &mdash; May 2018
   description: |
     <ul>
@@ -26,3 +28,9 @@
     <li>Used Nginx load balancing, a sharded MongoDB cluster, Elasticsearch, and a Memcached layer to achieve low latency query
     times under loads of hundreds of requests/s.
     </ul>
+
+- project: High-Speed Line Tracking Robot
+  duration: January 2018 &mdash; February 2018
+  url: https://github.com/mpokryva/LineTrackerPy
+  description: |
+    Independently assembled and programmed a robot using a Raspberry Pi, OpenCV, and Python, to autonomously follow a pattern. Developed and optimized digital PID control to achieve high tracking accuracy and speed.

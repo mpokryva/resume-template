@@ -7,6 +7,10 @@
 .section-header {
   @include section_border;
   margin-bottom: 1.5rem;
+  //color: #FF6148;
+  color: #ffa091;
+  color: #ffbfb5;
+  color: $light-blue;
 
   h2 {
     @include sans;
@@ -36,7 +40,7 @@
     //background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
     //background: #d6e5fa;
     //background: #94d8ff;
-    background: #B7E5FF;
+    background: $light-blue;
     background-size: cover;
     color: #406098;
     font-family: sans-serif;
@@ -70,7 +74,7 @@
       font-size: 1.5rem;
       margin-top: 0.5em;
     }
-    
+
     #blurb {
       margin-top: 30px;
       margin-bottom: 50px;
@@ -87,11 +91,16 @@
       margin-top: 50px;
       margin-bottom: 30px;
     }
-
+  }
+  
+  .project-image {
+    border-radius: 30%;
   }
 
+
   #image-container {
-    position: relative;
+    //position: relative;
+    margin: 0px 50px 50px 50px;
   }
 
   .header-image {
@@ -104,7 +113,7 @@
     margin-left: 5%;
     bottom: 175px; 
   }
-  
+
   #header-image-2 {
     bottom: 200px;
   }
@@ -112,7 +121,7 @@
   #header-image-3 {
     bottom: 250px;
   }
-  
+
   #header-image-4 {
     margin-left: 4%;
     height: 150px;
