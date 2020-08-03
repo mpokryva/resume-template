@@ -1,7 +1,6 @@
 // Resume styles
 // ---------------------------------------/
 
-
 // util
 
 .section-header {
@@ -30,21 +29,27 @@
 
 #top { padding: 1.5rem 0;
   padding-top: 0;
-  #gradient-header {
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+
+  svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+    /* set height to pixels if you want angle to change with screen width */
   }
 
   #gradient-header {
-    background: rgb(117,0,255);
+    overflow: hidden;
+    position: relative;
+    height: 850px;
+    background-color: $light-blue;
     //background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
     //background: #d6e5fa;
     //background: #94d8ff;
-    background: $light-blue;
+    //background: $light-blue;
     color: #406098;
     font-family: sans-serif;
-    overflow: hidden;
     padding: 0px 20px 0px;
-    position: relative;
     text-align: left;
     text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
 
@@ -90,44 +95,48 @@
       margin-bottom: 30px;
     }
   }
-  
+
   .project-image {
     border-radius: 30%;
   }
 
 
   #image-container {
-    //position: relative;
-    margin: 0px 50px 50px 50px;
+    position: relative;
+    margin-top: -20px;
+    transform: rotate(-9.74deg); // Calculated with some trig :)
+    bottom: 190px;
+    text-align: center;
   }
+
 
   .header-image {
     position: relative;
-    width: 12%;
-    margin-left: 7%;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   #header-image-1 {
-    margin-left: 5%;
-    bottom: 175px; 
+    //bottom: 175px; 
   }
 
   #header-image-2 {
-    bottom: 200px;
+    //bottom: 200px;
   }
 
   #header-image-3 {
-    bottom: 250px;
+    //bottom: 250px;
   }
 
   #header-image-4 {
-    margin-left: 4%;
-    height: 150px;
-    bottom: 275px;
+    //height: 150px;
+    //bottom: 275px;
   }
 
   #header-image-5 {
-    bottom: 340px;
+    //bottom: 340px;
   }
 
   .header-contact-info {
