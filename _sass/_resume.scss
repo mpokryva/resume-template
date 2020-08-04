@@ -27,6 +27,16 @@
 
 // page header styles
 
+#contact-me-email {
+  background: #e3f5ff;
+  color: $navy;
+  border-radius: 5px;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  font-family: monospace;
+  display: inline;
+}
+
 #top { padding: 1.5rem 0;
   padding-top: 0;
 
@@ -41,7 +51,7 @@
   #gradient-header {
     overflow: hidden;
     position: relative;
-    height: 850px;
+    height: 100%;
     background-color: $light-blue;
     //background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
     //background: #d6e5fa;
@@ -54,33 +64,32 @@
     text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
 
     #header-content {
-      width: 50%;
+      width: 60%;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 300px;
+      margin-bottom: 20%;
       text-align: center;
-      height: 70%;
     }
 
     .header-name {
       @include sans;
       font-size: 3rem;
       position: relative;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 1em;
+      margin-bottom: 1em;
       letter-spacing: -.15rem;
       line-height: 1;
     }
 
     p {
       @include sans;
-      font-size: 1.5rem;
+      font-size: 1.5em;
       margin-top: 0.5em;
     }
 
     #blurb {
-      margin-top: 30px;
-      margin-bottom: 50px;
+      margin-top: 1em;
+      margin-bottom: 1em;
     }
 
     #avatar {
@@ -91,27 +100,28 @@
       margin: auto auto;
       display: block;
       position: relative;
-      margin-top: 50px;
-      margin-bottom: 30px;
+      margin-top: 5%;
+      margin-bottom: 5%;
     }
   }
+
 
   #image-container {
     position: relative;
     transform: rotate(-6deg);
     text-align: center;
-    margin-top: -12%;
-    margin-left: 5%;
+    margin-top: -10%;
+    margin-left: 3%;
     margin-right: 3%;
-    margin-bottom: 3%;
+    margin-bottom: 10%;
   }
 
 
   .header-image {
     transform: rotate(6deg);
     position: relative;
-    height: auto;
     width: 12%;
+    //height: auto;
     margin-left: 3%;
     margin-right: 3%;
   }
@@ -137,6 +147,30 @@
     //bottom: 340px;
   }
 
+  @include media_mobile {
+
+    .header-image {
+      width: 50%;
+    }
+    //#header-image-1 {
+    //  display: none;
+    //}
+
+    #header-image-2 {
+      display: none;
+    }
+    #header-image-3 {
+      display: none;
+    }
+    #header-image-4 {
+      display: none;
+    }
+
+    #header-image-5 {
+      display: none;
+    }
+  }
+
   .header-contact-info {
     @include sans;
     text-align: center;
@@ -144,6 +178,7 @@
   .header-contact-info p a {
     color: inherit;
   }
+
 
   .title-bar {
     @include section_border;
