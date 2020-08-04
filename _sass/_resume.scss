@@ -44,15 +44,17 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 10vw;
+    height: 15vw;
     margin-bottom: -1px;
     /* set height to pixels if you want angle to change with screen width */
+  }
+
+  #header-container {
   }
 
   #gradient-header {
     overflow: hidden;
     position: relative;
-    height: 100%;
     background-color: $light-blue;
     //background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
     //background: #d6e5fa;
@@ -67,8 +69,9 @@
       width: 60%;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 20%;
+      margin-bottom: 20vh;
       text-align: center;
+      padding-bottom: 10vw;
     }
 
     .header-name {
@@ -90,6 +93,7 @@
     #blurb {
       margin-top: 1em;
       margin-bottom: 1em;
+
     }
 
     #avatar {
@@ -105,23 +109,20 @@
     }
   }
 
-
   #image-container {
     position: relative;
-    transform: rotate(-6deg);
+    //position: absolute;
+    transform: translateY(-15vw) rotate(-8deg) ;
     text-align: center;
-    margin-top: -10%;
     margin-left: 3%;
     margin-right: 3%;
-    margin-bottom: 10%;
   }
 
 
   .header-image {
-    transform: rotate(6deg);
+    transform: rotate(8deg);
     position: relative;
     width: 12%;
-    //height: auto;
     margin-left: 3%;
     margin-right: 3%;
   }
@@ -153,7 +154,7 @@
       width: 50%;
     }
     //#header-image-1 {
-    //  display: none;
+      //  display: none;
     //}
 
     #header-image-2 {
@@ -170,6 +171,8 @@
       display: none;
     }
   }
+
+
 
   .header-contact-info {
     @include sans;
