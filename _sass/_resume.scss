@@ -49,10 +49,6 @@
     /* set height to pixels if you want angle to change with screen width */
   }
 
-  #header-container {
-    margin-bottom: 100px;
-  }
-
   #gradient-header {
     overflow: hidden;
     position: relative;
@@ -153,6 +149,10 @@
 
     #image-container {
       bottom: 0;
+    }
+
+    #header-container {
+      margin-bottom: 12.5vw;
 
     }
 
