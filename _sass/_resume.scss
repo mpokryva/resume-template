@@ -40,13 +40,21 @@
 #top { padding: 1.5rem 0;
   padding-top: 0;
 
-  svg {
+  #triangle-svg {
+    position: absolute;
+    bottom: 3vw;
+    width: 100%;
+    height: 20vw;
+    margin-bottom: -1px;
+    /* set height to pixels if you want angle to change with screen width */
+  }
+
+  #spacer-svg {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 25vw;
+    height: 3vw;
     margin-bottom: -1px;
-    /* set height to pixels if you want angle to change with screen width */
   }
 
   #gradient-header {
@@ -64,10 +72,10 @@
 
     #header-content {
       width: 60%;
-      margin-top: 5vh;
+      margin-top: 10vh;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 25vw;
+      margin-bottom: 20vw;
       text-align: center;
     }
 
@@ -108,8 +116,8 @@
 
   #image-container {
     position: relative;
-    bottom: 12.5vw;
-    transform: rotate(-10.5deg);
+    bottom: 8vw;
+    transform: rotate(-11deg);
     text-align: center;
     margin-left: 3%;
     margin-right: 3%;
@@ -117,32 +125,15 @@
 
 
   .header-image {
-    transform: rotate(10.5deg);
+    transform: rotate(11deg);
     position: relative;
     width: 12vw;
     margin-left: 3%;
     margin-right: 3%;
   }
 
-  #header-image-1 {
-    //bottom: 175px; 
-  }
-
-  #header-image-2 {
-    //bottom: 200px;
-  }
-
-  #header-image-3 {
-    //bottom: 250px;
-  }
-
-  #header-image-4 {
-    //height: 150px;
-    //bottom: 275px;
-  }
-
   #header-image-5 {
-    //bottom: 340px;
+    bottom: 1vw; // This image is narrower, so shift it up a bit.
   }
 
   @include media_mobile {
