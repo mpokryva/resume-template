@@ -4,8 +4,7 @@
 
 - skill: Infrastructure
   description:
-    Linux, Postgres, MongoDB, AWS (EC2, ELB, Neptune), Nginx/Apache, Elasticsearch, Memcached, Ansible, Protobuf/gRPC, OpenAPI, JSON:API, Node.js.
-
+    Linux, Kubernetes, Postgres, MongoDB, AWS (EC2, ELB, Neptune), Nginx/Apache, Elasticsearch, Memcached, Ansible, Protobuf/gRPC, OpenAPI, JSON:API, Node.js.
 
 
 - skill: Other

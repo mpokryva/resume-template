@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  spellcheck: true;
 }
 
 a {
@@ -28,17 +29,13 @@ h2, h3, h4, strong, b {
 }
 
 html {
-  //background: $white;
-  //background: #fff8e7;
-  //    background: #fff8e9;
-  //    background: #fff8f5;
-  //    background: #fff3ed;
+  background: $white;
 }
 
 body{
   @include sans;
   color: $text_color;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
 }
 
