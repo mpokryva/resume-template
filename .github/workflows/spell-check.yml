@@ -1,4 +1,4 @@
-- name: Check Spelling (JS, Vue, HTML, Markdown, Text)
+name: Check Spelling (JS, Vue, HTML, Markdown, Text)
   on:
     push:
       branches:
