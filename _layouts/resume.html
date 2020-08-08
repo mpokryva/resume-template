@@ -3,22 +3,38 @@
 
   {% include head.html %}
 
+
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
-    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
-      <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
-
-      <header class="page-header">
-
-        <!-- You can turn off the avatar in _config.yml by setting to false -->
-        {% if site.resume_avatar == 'true' %}
-        <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
-        {% endif %}
-
-        <!-- Your name is defined in the _config.yml file -->
-        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
-
+    <section id="top">
+      <div id="header-container">
+        <div id="gradient-header">
+          <svg id="triangle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            -          <polygon fill="white" points="0,100 100,100 100,0"/>
+            -        </svg>
+          <svg id="spacer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            -          <polygon fill="white" points="0,0 0,100 100,100 100,0"/>
+            -        </svg>
+          <div id="header-content">
+            <!-- You can turn off the avatar in _config.yml by setting to false -->
+            {% if site.resume_avatar == 'true' %}
+            <img src="images/avatar.png" alt="my photo" class="no-print" itemprop="image" id="avatar">
+            {% endif %}
+            <h1 class="header-name" itemprop="name">{{ site.data.header.name }}</h1>
+            <div id="blurb">
+              <p> {{ site.data.header.blurb }}</p>
+            </div>
+          </div>
+          <div id="image-container">
+            <img src="images/undraw_working_from_anywhere_ub67.svg" id="header-image-1" class="header-image" itemprop="image">
+            <img src="images/undraw_a_day_off_w9ex.svg" id="header-image-2" class="header-image" itemprop="image">
+            <img src="images/undraw_stand_out_1oag.svg" id="header-image-3" class="header-image" itemprop="image">
+            <img src="images/undraw_feeling_proud_qne1.svg" id="header-image-4" class="header-image" itemprop="image">
+            <img src="images/undraw_working_out_6psf.svg" id="header-image-5" class="header-image" itemprop="image">
+          </div>
+        </div>
+      </div>
+      <div class="wrapper" itemscope itemtype="http://schema.org/Person">
         <!-- To display contact info here, change `display_header_contact_info` value in _config.yml to true -->
         {% if site.display_header_contact_info == 'true' %}
         <div class="header-contact-info">
@@ -38,52 +54,101 @@
         {% endif %}
 
         <div class="executive-summary" itemprop="description">
-          {{ site.resume_header_intro }}
+          {{ site.data.intro.intro }}
         </div>
 
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-        {% else %}
+
+    </section>
+    {% if site.resume_looking_for_work == 'yes' %}
+    <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+    {% elsif site.resume_looking_for_work == 'no' %}
+    <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+    {% else %}
+    {% endif %}
+
+      </div>
+
+      <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
+        <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
+
+        {% if site.resume_section_experience %}
+        <!-- begin Experience -->
+        <section class="content-section">
+
+          <header class="section-header">
+            <h2>Experience</h2>
+          </header>
+
+          {% for job in site.data.experience %}
+          <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+            <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+            <h4 class="resume-item-details" itemprop="description">{{ job.position }}</h4>
+            <h4 class="resume-item-details" itemprop="description">{{ job.duration }}</h4>
+            <p class="resume-item-copy">{{ job.summary }}</p>
+          </div><!-- end of resume-item -->
+          {% endfor %}
+
+        </section>
+        <!-- end Experience -->
         {% endif %}
 
-      </header>
-
-      {% if site.resume_section_experience %}
-      <!-- begin Experience -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Experience</h2>
-        </header>
-
-        {% for job in site.data.experience %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
-        </div><!-- end of resume-item -->
-        {% endfor %}
-
-      </section>
-      <!-- end Experience -->
-      {% endif %}
 
 
-      {% if site.resume_section_education %}
-      <!-- begin Education -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Education</h2>
-        </header>
+        {% if site.resume_section_projects %}
+        <!-- begin Projects -->
+        <section class="content-section">
+          <header class="section-header">
+            <h2>Projects</h2>
+          </header>
 
-        {% for education in site.data.education %}
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-          <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
-          <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
-          <p class="resume-item-copy" itemprop="description">
+          {% for project in site.data.projects %}
+          <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+            <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+            <h3 class="resume-item-title" itemprop="name">{{ project.project }}</h3>
+            <h4 class="resume-item-details" itemprop="description">{{ project.role }} {{ project.duration }}</h4>
+            {% if project.url %}
+            <h4 class="resume-item-details" itemprop="description"><a href="{{ project.url }}" itemprop="url">Source</a></h4>
+            {% endif %}
+            <p class="resume-item-copy">{{ project.description }}</p>
+          </div>
+          {% endfor %}
+
+        </section>
+        <!-- end Projects -->
+        {% endif %}
+
+        {% if site.resume_section_skills %}
+        <!-- begin Skills -->
+        <section class="content-section">
+
+          <header class="section-header">
+            <h2>Skills</h2>
+          </header>
+          {% for skill in site.data.skills %}
+          <div class="resume-item">
+            <h4 class="resume-item-details">{{ skill.skill }}</h4>
+            <p class="resume-item-copy">{{ skill.description }}</p>
+          </div>
+          {% endfor %}
+
+        </section>
+        <!-- end Skills -->
+        {% endif %}
+
+        {% if site.resume_section_education %}
+        <!-- begin Education -->
+        <section class="content-section">
+          <header class="section-header">
+            <h2>Education</h2>
+          </header>
+
+          {% for education in site.data.education %}
+          <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+            <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
+            <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
+            <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
+            <p class="resume-item-copy" itemprop="description">
             <ul class="resume-item-list">
               {% for award in education.awards %}
               <li>{{ award.award }}</li>
@@ -91,153 +156,118 @@
             </ul></h5>
 
 
-          <p class="resume-item-copy">{{ education.summary }}</p>
-        </div>
-        {% endfor %}
-      </section>
-      <!-- end Education -->
-      {% endif %}
+            <p class="resume-item-copy">{{ education.summary }}</p>
+          </div>
+          {% endfor %}
+        </section>
+        <!-- end Education -->
+        {% endif %}
 
+        {% if site.resume_section_recognition %}
+        <!-- begin Recognition -->
+        <section class="content-section">
 
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
+          <header class="section-header">
+            <h2>Recognition</h2>
+          </header>
 
-        {% for project in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
-          <p class="resume-item-copy">{{ project.description }}</p>
-        </div>
-        {% endfor %}
+          {% for recognition in site.data.recognitions %}
+          <div class="resume-item">
+            <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
+            <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
+            <p class="resume-item-copy">{{ recognition.summary }}</p>
+          </div>
+          {% endfor %}
 
-      </section>
-      <!-- end Projects -->
-      {% endif %}
+        </section>
+        <!-- end Recognition -->
+        {% endif %}
 
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
-      <section class="content-section">
+        {% if site.resume_section_associations %}
+        <!-- begin Associations -->
+        <section class="content-section">
 
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-        {% for skill in site.data.skills %}
-        <div class="resume-item">
-          <h4 class="resume-item-details">{{ skill.skill }}</h4>
-          <p class="resume-item-copy">{{ skill.description }}</p>
-        </div>
-        {% endfor %}
+          <header class="section-header">
+            <h2>Associations</h2>
+          </header>
 
-      </section>
-      <!-- end Skills -->
-      {% endif %}
+          {% for association in site.data.associations %}
+          <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+            <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
+            <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
+            <p class="resume-item-copy">{{ association.summary }}</p>
+          </div>
+          {% endfor %}
 
-      {% if site.resume_section_recognition %}
-      <!-- begin Recognition -->
-      <section class="content-section">
+        </section>
+        <!-- end Associations -->
+        {% endif %}
 
-        <header class="section-header">
-          <h2>Recognition</h2>
-        </header>
+        {% if site.resume_section_interests %}
+        <!-- begin Interests -->
+        <section class="content-section">
 
-        {% for recognition in site.data.recognitions %}
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
-          <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
-          <p class="resume-item-copy">{{ recognition.summary }}</p>
-        </div>
-        {% endfor %}
+          <header class="section-header">
+            <h2>When not working</h2>
+          </header>
 
-      </section>
-      <!-- end Recognition -->
-      {% endif %}
-
-      {% if site.resume_section_associations %}
-      <!-- begin Associations -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Associations</h2>
-        </header>
-
-        {% for association in site.data.associations %}
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
-          <p class="resume-item-copy">{{ association.summary }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Associations -->
-      {% endif %}
-
-      {% if site.resume_section_interests %}
-      <!-- begin Interests -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>When not in the office</h2>
-        </header>
-
-        <div class="resume-item">
-          <p class="resume-item-copy">
+          <div class="resume-item">
+            <p class="resume-item-copy">
             {% for interest in site.data.interests %}
             {{ interest.description }}
             {% endfor %}
+            </p>
+          </div>
+
+        </section>
+        <!-- end Interests -->
+        {% endif %}
+
+        {% if site.resume_section_contact_me %}
+        <section class="content-section">
+          <header class="section-header">
+            <h2>Contact me</h2>
+          </header>
+
+          <p>
+          You can reach me at <span id="contact-me-email">"mpokryva" at "gmail" dot com</span>. 
           </p>
-        </div>
+        </section>
+        {% endif %}
 
-      </section>
-      <!-- end Interests -->
-      {% endif %}
+        {% if site.resume_section_links %}
+        <!-- begin Links -->
+        <section class="content-section">
 
-      {% if site.resume_section_links %}
-      <!-- begin Links -->
-      <section class="content-section">
+          <header class="section-header">
+            <h2>Additional Links</h2>
+          </header>
 
-        <header class="section-header">
-          <h2>Additional Links</h2>
-        </header>
+          <div class="resume-item">
+            <ul class="resume-item-list">
+              {% for link in site.data.links %}
+              <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
 
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            {% for link in site.data.links %}
-            <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
+        </section>
+        <!-- end Links -->
+        {% endif %}
 
-      </section>
-      <!-- end Links -->
-      {% endif %}
 
-      {% if site.resume_print_social_links %}
-      <!-- begin Print Social Links -->
-      <section class="content-section print-only">
-
-        <header class="section-header">
-          <h2>Social Links</h2>
-        </header>
-
-        <div class="resume-item">
-        {% include print-social-links.html %}
-        </div>
-
-      </section>
-      <!-- end Print Social Links -->
-      {% endif %}
-
-      <footer class="page-footer">
-        <p class="footer-line">This resume is built by <a href="https://en.wikipedia.org/wiki/Continuous_integration">CI/CD process</a>
-          I created on AWS. Most recent version is online <a href="https://imalinovsky.bitbucket.io/">on Bitbucket</a>.</p>
-        <p class="footer-line">Feel free to <a href="https://bitbucket.org/imalinovsky/resume-template">fork</a>, no attribution required</p>
-      </footer>
-    </div>
+        <footer class="page-footer">
+          {% if site.resume_section_social_links %}
+          <a class="image-link" href="{{ site.data.social_links.github }}">
+             <svg class="social-icon" height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+          </a>
+          <a class="img-link" href="{{ site.data.social_links.linkedin }}">
+            <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          {% endif %}
+          <p class="footer-line">This resume is deployed via a <a href="https://en.wikipedia.org/wiki/Continuous_integration">CI/CD pipeline</a> using <a href="https://github.com/features/actions">GitHub Actions</a>. Most recent version is online on <a href="https://github.com/mpokryva/resume-template">GitHub</a>.</p>
+          <p class="footer-line">Feel free to fork, no attribution required</p>
+        </footer>
+      </div>
   </body>
 </html>

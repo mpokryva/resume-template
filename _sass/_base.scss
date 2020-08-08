@@ -6,14 +6,43 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:link {
+  color: #0084cf;
+}
+
+a:visited {
+  color: #0084cf;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: $primary;
+}
+
+.image-link:hover {
+  text-decoration: none;
+}
+
+h2, h3, h4, strong, b {
+  //color: #7500ff;
+  //color: #00b7f9;
+  color: $primary;
+  //  color: #16a085;
+}
+
 html {
   background: $white;
 }
 
 body{
-  @include serif;
+  @include sans;
   color: $text_color;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
 }
 
@@ -35,12 +64,12 @@ body{
 .group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
 
 ::-moz-selection {
-    background: rgba(51,51,51,.8);
-    color: #fff;
-    text-shadow: none;
+  background: #406098;
+  color: #fff;
+  text-shadow: none;
 }
 ::selection {
-    background: rgba(51,51,51,.8);
-    color: #fff;
-    text-shadow: none;
+  background: #406098;
+  color: #fff;
+  text-shadow: none;
 }

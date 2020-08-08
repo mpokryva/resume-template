@@ -6,6 +6,10 @@
 .section-header {
   @include section_border;
   margin-bottom: 1.5rem;
+  //color: #FF6148;
+  color: #ffa091;
+  color: #ffbfb5;
+  color: $secondary;
 
   h2 {
     @include sans;
@@ -16,28 +20,152 @@
   }
 }
 
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
 // page header styles
 
-.page-header { padding: 1.5rem 0;
+#contact-me-email {
+  background: #e3f5ff;
+  color: $primary;
+  border-radius: 5px;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  font-family: monospace;
+  display: inline;
+}
 
-  .avatar {
-    width: 95px;
-    max-width: 100%;
+#top { padding: 1.5rem 0;
+  padding-top: 0;
+
+  #triangle-svg {
+    position: absolute;
+    bottom: 3vw;
+    width: 100%;
+    height: 20vw;
+    margin-bottom: -1px;
+    /* set height to pixels if you want angle to change with screen width */
+  }
+
+  #spacer-svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3vw;
+    margin-bottom: -1px;
+  }
+
+  #gradient-header {
     overflow: hidden;
-    @include border-radius(100px);
-    margin: 0 auto;
-    display: block;
+    position: relative;
+    background-color: $secondary;
+    //background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
+    //background: #d6e5fa;
+    //background: #94d8ff;
+    color: #406098;
+    font-family: sans-serif;
+    text-align: left;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+
+    #header-content {
+      width: 60%;
+      margin-top: 10vh;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20vw;
+      text-align: center;
+    }
+
+    .header-name {
+      @include sans;
+      font-size: 3rem;
+      position: relative;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      letter-spacing: -.15rem;
+      line-height: 1;
+    }
+
+    p {
+      @include sans;
+      font-size: 1.5em;
+      margin-top: 0.5em;
+    }
+
+    #blurb {
+      margin-top: 1em;
+      margin-bottom: 1em;
+
+    }
+
+    #avatar {
+      width: 250px;
+      max-width: 100%;
+      overflow: hidden;
+      @include border-radius(50%);
+      margin: auto auto;
+      display: block;
+      position: relative;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
   }
 
-  .header-name {
-    @include sans;
-    font-size: 3rem;
-    font-weight: 900;
+  #image-container {
+    position: relative;
+    bottom: 8vw;
+    transform: rotate(-11deg);
     text-align: center;
-    letter-spacing: -.15rem;
-    line-height: 1;
-    margin: 1rem 0 0;
+    margin-left: 3%;
+    margin-right: 3%;
   }
+
+
+  .header-image {
+    transform: rotate(11deg);
+    position: relative;
+    width: 12vw;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  #header-image-5 {
+    bottom: 1vw; // This image is narrower, so shift it up a bit.
+  }
+
+  @include media_mobile {
+
+    #image-container {
+      bottom: 0;
+    }
+
+    #header-container {
+      margin-bottom: 15vw;
+
+    }
+
+    .header-image {
+      width: 50vw;
+    }
+
+    #header-image-2 {
+      display: none;
+    }
+    #header-image-3 {
+      display: none;
+    }
+    #header-image-4 {
+      display: none;
+    }
+
+    #header-image-5 {
+      display: none;
+    }
+  }
+
+
 
   .header-contact-info {
     @include sans;
@@ -47,6 +175,7 @@
     color: inherit;
   }
 
+
   .title-bar {
     @include section_border;
     margin-top: 2rem;
@@ -54,7 +183,7 @@
     @include clearfix;
 
     .header-title {
-      @include sans;
+      @include sans_bold;
       font-weight: 300;
       font-size: 1.75rem;
       line-height: 2rem;
@@ -98,7 +227,7 @@
   .icon-link { display: inline-block;
 
     &:hover .icon path {
-      fill: #333;
+      fill: $black;
       @include transition(all .2s ease);
     }
   }
@@ -118,12 +247,12 @@
   width: 220px;
   font-size: 1.375rem;
   @include sans_light;
-  color: #333;
+  color: $black;
   line-height: 55px;
   @include transition(all .2s ease);
 
   &:hover {
-    background-color: #333;
+    background-color: $black;
     color: #fff;
   }
 
@@ -138,7 +267,7 @@
   .resume-item { margin-bottom: 2rem; }
 
   .resume-item-title {
-    @include sans_bold;
+    @include sans;
     margin: 0 0 .75rem;
     font-size: 1.5rem;
     letter-spacing: -.05rem;
@@ -155,21 +284,6 @@
     }
   }
 
-  .resume-item-title,
-  .resume-item-details,
-  .resume-item-copy,
-  .resume-item-list {
-    a {
-      color: #333;
-      text-decoration: none;
-      border-bottom: 1px solid;
-
-      &:hover {
-        border-bottom: none;
-        color: #9c9c9c;
-      }
-    }
-  }
 
   .resume-item-copy { margin: .75rem 0 0; }
 }
@@ -180,18 +294,24 @@
   border-top: 4px solid #c7c7c7;
   padding-top: .5rem;
   text-align: center;
-  margin-bottom: 0rem;
+  margin-bottom: 1em;
 
   .footer-line {
     margin: 0;
-    font-size: .5rem;
+    font-size: .75em;
     color: #999;
-
-    > a {
-      font-weight: 700;
-      color: #333;
-    }
   }
+}
+
+.social-icon {
+  fill: #c6cbd1;
+  margin: 0.5vw;
+  height: 24px;
+  width: 24px;
+}
+
+.social-icon:hover {
+  fill: $primary;
 }
 
 .print-only { display: none !important }

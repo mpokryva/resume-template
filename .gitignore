@@ -4,4 +4,4 @@ _site/
 _vendor/
 .idea/
 public/
-
+*.swp
