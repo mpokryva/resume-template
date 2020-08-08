@@ -4,7 +4,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  spellcheck: true;
 }
 
 a {
@@ -16,15 +15,23 @@ a:link {
   color: #0084cf;
 }
 
+a:visited {
+  color: #0084cf;
+}
+
 a:hover {
   text-decoration: underline;
-  color: $navy;
+  color: $primary;
+}
+
+.image-link:hover {
+  text-decoration: none;
 }
 
 h2, h3, h4, strong, b {
   //color: #7500ff;
   //color: #00b7f9;
-  color: $navy;
+  color: $primary;
   //  color: #16a085;
 }
 

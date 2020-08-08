@@ -9,7 +9,7 @@
   //color: #FF6148;
   color: #ffa091;
   color: #ffbfb5;
-  color: $light-blue;
+  color: $secondary;
 
   h2 {
     @include sans;
@@ -29,7 +29,7 @@
 
 #contact-me-email {
   background: #e3f5ff;
-  color: $navy;
+  color: $primary;
   border-radius: 5px;
   padding-left: 0.5%;
   padding-right: 0.5%;
@@ -60,11 +60,10 @@
   #gradient-header {
     overflow: hidden;
     position: relative;
-    background-color: $light-blue;
+    background-color: $secondary;
     //background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
     //background: #d6e5fa;
     //background: #94d8ff;
-    //background: $light-blue;
     color: #406098;
     font-family: sans-serif;
     text-align: left;
@@ -295,13 +294,24 @@
   border-top: 4px solid #c7c7c7;
   padding-top: .5rem;
   text-align: center;
-  margin-bottom: 0rem;
+  margin-bottom: 1em;
 
   .footer-line {
     margin: 0;
     font-size: .75em;
     color: #999;
   }
+}
+
+.social-icon {
+  fill: #c6cbd1;
+  margin: 0.5vw;
+  height: 24px;
+  width: 24px;
+}
+
+.social-icon:hover {
+  fill: $primary;
 }
 
 .print-only { display: none !important }
