@@ -1,0 +1,9 @@
+- name: Check Spelling (JS, Vue, HTML, Markdown, Text)
+  on:
+    push:
+      branches:
+        - master
+     pull_request:
+      branches: [ $default-branch ]
+  uses: UnicornGlobal/spellcheck-github-actions@0.4.0
+
