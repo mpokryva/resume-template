@@ -7,6 +7,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-steps:
-    - uses: actions/checkout@v2
-    - uses: UnicornGlobal/spellcheck-github-actions@0.4.0
+    steps:
+        - uses: actions/checkout@v2
+        - uses: UnicornGlobal/spellcheck-github-actions@0.4.0
