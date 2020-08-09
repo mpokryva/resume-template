@@ -253,6 +253,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 207)
+  jekyll-github-metadata
 
 BUNDLED WITH
    2.0.1

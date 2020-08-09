@@ -1,6 +1,6 @@
 # Site settings
-url: "https://itsmiki.com"
-baseurl: "/root"
+url: https://itsmiki.com
+repository: mpokryva/resume-template
 title: "Miki Pokryvailo"
 description: "Backend Software Engineer"
 
@@ -52,3 +52,5 @@ resume_theme:                   default
 # Note: when editing locally, remember to restart
 # your Jekyll server when you edit this file. Changes
 # to _config.yml are only recognized when the server starts
+plugins:
+  - "jekyll-github-metadata"
