@@ -1,5 +1,6 @@
 # Site settings
 url: https://itsmiki.com
+base_url: /root
 title: "Miki Pokryvailo"
 description: "Backend Software Engineer"
 
