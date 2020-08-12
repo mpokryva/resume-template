@@ -17,7 +17,7 @@
     <li>Implemented the fuzzed load testing mechanism, which was the core logic of the system, from scratch. I also implemented server-to-server communication using RabbitMQ, and designed some MongoDB schemas.</li>
     </ul>
 
-- project: Cloud-Based High Performance Social Networking API
+- project: Cloud-Based High-Performance Social Networking API
   url: https://github.com/mpokryva/TwitterClone
   duration: March 2018 &mdash; May 2018
   description: |
