@@ -135,7 +135,18 @@
     bottom: 1vw; // This image is narrower, so shift it up a bit.
   }
 
+  #lottie-animation {
+    width: 40vw;
+    height: auto;
+    display: inline-block;
+    bottom: 50vw;
+  }
+
   @include media_mobile {
+    
+  #lottie-animation {
+    width: 40vh;
+  }
 
     #image-container {
       bottom: 0;
@@ -199,6 +210,7 @@
   }
 
   .executive-summary {
+    //margin-top: 5vw;
     @include media_larger_than_mobile { font-size: 1.125rem; }
   }
 }
