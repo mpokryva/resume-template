@@ -116,7 +116,7 @@
   #image-container {
     position: relative;
     bottom: 8vw;
-    transform: rotate(-11deg);
+    //transform: rotate(-11deg);
     text-align: center;
     margin-left: 3%;
     margin-right: 3%;
@@ -124,9 +124,9 @@
 
 
   .header-image {
-    transform: rotate(11deg);
+    //transform: rotate(11deg);
     position: relative;
-    width: 12vw;
+    width: 40vw;
     margin-left: 3%;
     margin-right: 3%;
   }
