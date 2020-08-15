@@ -42,9 +42,9 @@
 
   #triangle-svg {
     position: absolute;
-    bottom: 3vw;
+    bottom: 0vw;
     width: 100%;
-    height: 20vw;
+    height: 15vw;
     margin-bottom: -1px;
     /* set height to pixels if you want angle to change with screen width */
   }
@@ -53,11 +53,12 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 3vw;
+    height: 0vw;
     margin-bottom: -1px;
   }
 
   #gradient-header {
+    display: flex;
     overflow: hidden;
     position: relative;
     background-color: $secondary;
@@ -70,12 +71,12 @@
     text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
 
     #header-content {
-      width: 65%;
+      width: 50vw;
       margin-top: 10vh;
-      margin-left: auto;
+      margin-left: 20vh;
       margin-right: auto;
       margin-bottom: 20vw;
-      text-align: center;
+      //text-align: center;
     }
 
     .header-name {
@@ -100,17 +101,6 @@
 
     }
 
-    #avatar {
-      width: 250px;
-      max-width: 100%;
-      overflow: hidden;
-      @include border-radius(50%);
-      margin: auto auto;
-      display: block;
-      position: relative;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
   }
 
   #image-container {
@@ -136,17 +126,17 @@
   }
 
   #lottie-animation {
-    width: 40vw;
-    height: auto;
+    width: 50vw;
     display: inline-block;
-    bottom: 50vw;
+    margin-top: 8vw;
+    //margin-right: 5vw;
   }
 
   @include media_mobile {
-    
-  #lottie-animation {
-    width: 40vh;
-  }
+
+    #lottie-animation {
+      width: 40vh;
+    }
 
     #image-container {
       bottom: 0;
@@ -213,6 +203,17 @@
     //margin-top: 5vw;
     @include media_larger_than_mobile { font-size: 1.125rem; }
   }
+}
+#avatar {
+  width: 250px;
+  max-width: 100%;
+  overflow: hidden;
+  @include border-radius(50%);
+  margin: auto auto;
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  bottom: 3vw;
 }
 
 .icon-links {
