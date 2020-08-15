@@ -25,6 +25,14 @@
   -webkit-font-smoothing: antialiased;
 }
 
+#header-container a:link {
+  color: $accent;
+}
+
+#header-container a:visited {
+  color: $accent;
+}
+
 // page header styles
 
 #contact-me-email {
