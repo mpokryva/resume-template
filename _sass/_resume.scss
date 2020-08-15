@@ -81,7 +81,7 @@
     #header-content {
       width: 50vw;
       margin-top: 10vh;
-      margin-left: 20vh;
+      margin-left: 10vw;
       margin-right: auto;
       margin-bottom: 20vw;
       //text-align: center;
@@ -116,8 +116,8 @@
     bottom: 8vw;
     //transform: rotate(-11deg);
     text-align: center;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
 
 
@@ -142,9 +142,21 @@
 
   @include media_mobile {
 
-    #lottie-animation {
-      width: 40vh;
+    #gradient-header {
+      flex-direction: column;
+
+      #header-content {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      #lottie-animation {
+        width: 100vw;
+      }
     }
+
 
     #image-container {
       bottom: 0;
@@ -173,8 +185,6 @@
       display: none;
     }
   }
-
-
 
   .header-contact-info {
     @include sans;
