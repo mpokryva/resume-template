@@ -1,4 +1,1 @@
-name: "Hi, I'm Miki Pokryvailo."
-#blurb: "I'm a highly-motivated and driven backend engineer with experience working in high growth environments on business-critical infrastructure problems."
-blurb: I'm a software engineer with experience in building scalable, secure and flexible infrastructure.
-blurb: I’m an energetic, easy-going software engineer that thrives on solving complex, cross-disciplinary problems. I’m versatile, adaptable, and not overly capricious. I work on a small, impactful team. I’ve done impactful stuff. I’m proactive, autonomous, and can deliver projects from start to finish with high-quality.
+blurb: I’m an energetic, easy-going software engineer that thrives on solving complex problems. I currently work at Confluent on our API Framework team where I help build the groundwork for Confluent Cloud's APIs. During my time here, I’ve also won hackathon awards, <a href="https://www.confluent.io/blog/measure-go-code-coverage-with-bincover">hi</a> a production-ready library, and <a href=“https://www.confluent.io/blog/measure-go-code-coverage-with-bincover/“>blogged</a> about it.
