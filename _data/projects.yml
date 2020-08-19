@@ -11,7 +11,7 @@
   duration: February 2019 &mdash; May 2019
   description: |
     <ul>
-    <li>I built an automated API performance-grading system as an undergraduate TA of a cloud computing course (CSE 356).</li>
+    <li>Built an automated API performance-grading system as an undergraduate TA of a cloud computing course (CSE 356).</li>
     <li>The system orchestrated several machines to generate load, aggregate latency results, and grade the APIs accordingly.</li>
     <li>Implemented the core logic of the system - the fuzzed load testing mechanism - from scratch. Implemented server-to-server communication using RabbitMQ, and designed some MongoDB schemas.</li>
     </ul>
