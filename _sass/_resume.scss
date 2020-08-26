@@ -117,19 +117,6 @@
     margin-right: 3vw;
   }
 
-
-  .header-image {
-    //transform: rotate(11deg);
-    position: relative;
-    width: 40vw;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-
-  #header-image-5 {
-    bottom: 1vw; // This image is narrower, so shift it up a bit.
-  }
-
   #lottie-animation {
     width: 50vw;
     display: inline-block;
@@ -137,50 +124,6 @@
     //margin-right: 5vw;
   }
 
-  @include media_mobile {
-
-    #gradient-header {
-      flex-direction: column;
-
-      #header-content {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-      }
-
-      #lottie-animation {
-        width: 100vw;
-      }
-    }
-
-
-    #image-container {
-      bottom: 0;
-    }
-
-    #header-container {
-      margin-bottom: 15vw;
-    }
-
-    .header-image {
-      width: 50vw;
-    }
-
-    #header-image-2 {
-      display: none;
-    }
-    #header-image-3 {
-      display: none;
-    }
-    #header-image-4 {
-      display: none;
-    }
-
-    #header-image-5 {
-      display: none;
-    }
-  }
 
   .header-contact-info {
     @include sans;
@@ -218,6 +161,37 @@
     @include media_larger_than_mobile { font-size: 1.125rem; }
   }
 }
+
+@include media_mobile {
+  .no-mobile { 
+    display: none !important;
+  }
+
+  #gradient-header {
+    flex-direction: column;
+
+    #header-content {
+      width: 80vw !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      text-align: center;
+    }
+
+    #lottie-animation {
+      width: 100vw !important;
+    }
+  }
+
+  #image-container {
+    bottom: 0 !important;
+  }
+
+  #header-container {
+    margin-bottom: 15vw !important;
+  }
+
+}
+
 #avatar {
   width: 250px;
   max-width: 100%;
