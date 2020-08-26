@@ -2,13 +2,11 @@
 // ---------------------------------------/
 
 // util
+*{ color-adjust: exact;  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
 .section-header {
   @include section_border;
   margin-bottom: 1.5rem;
-  //color: #FF6148;
-  color: #ffa091;
-  color: #ffbfb5;
   color: $secondary;
 
   h2 {
@@ -106,7 +104,6 @@
     #blurb {
       margin-top: 1em;
       margin-bottom: 1em;
-
     }
 
   }
@@ -164,7 +161,6 @@
 
     #header-container {
       margin-bottom: 15vw;
-
     }
 
     .header-image {
@@ -347,36 +343,87 @@
 .print-only { display: none !important }
 
 @media print {
-  @page { margin: 0; }
-  body { margin: 1.6cm; }
+
+  #header-content {
+    margin: 0 auto 0 auto !important;
+    width: 80vw !important;
+  }
+
+  #gradient-header {
+    background: none !important;
+    display: block !important;
+    text-align: center !important;
+    text-shadow: none !important;
+  }
+
+  @page { 
+    margin: 0; 
+    margin-top: 0.5in;
+    margin-bottom: 0.5in;
+  }
+
+  @page :first {
+    margin-top: 0in;
+  }
+
+  body { 
+    margin: 1.6cm;
+    font-size: 12px;
+    line-height: 1rem; 
+  }
+
+  #top {
+    padding-bottom: 0 !important;
+  }
+
+
   .no-print { display: none !important }
   .print-only { display: block !important }
   body { font-size: 12px; line-height: 1rem; }
-  .page-header { padding: 1rem 0 .2rem;
-    .header-name {
-      @include sans_bold;
-      font-size: 2rem;
-      margin: 0 0 .2rem;
-    }
+
+  .header-name {
+    margin: 0 auto 0 auto !important;
+    font-size: 2rem !important;
   }
+
+  #blurb {
+    font-size: 0.75rem !important;
+    line-height: 1.25rem !important;
+    margin: 0 auto 0 auto !important;
+  }
+
+  .interest {
+    page-break-inside: always;
+    margin: 8px;
+    display: inline-block;
+  }
+
   .section-header {
     @include section_border_thin;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem !important;
+    page-break-inside: avoid;
     h2 { font-size: 1.2rem; line-height: 1.0rem; }
   }
+
   .content-section {
-    margin: 0 0 1rem;
-    .resume-item { margin-bottom: 1rem; }
+    margin-bottom: 1rem !important;
+
     .resume-item-title {
       font-size: 16px;
       line-height: .7em;
     }
+    .resume-item {
+      margin-bottom: 1rem !important;
+    }
+
+    .resume-item-copy {
+      //overflow: auto !important;
+    }
 
     .resume-item-details {
       font-size: 12px;
-      margin: 0 0 .75rem;
+      margin: 0 0 .5rem;
       line-height: .7em;
-      font-style:italic;
 
       &.award-title {
         font-size: 11px;
