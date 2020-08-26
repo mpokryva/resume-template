@@ -206,7 +206,9 @@
 
         <div class="resume-item">
           <p class="resume-item-copy">
-          {{ site.data.interests.description }}
+          {% for interest in site.data.interests.description%}
+          <p class="interest">{{ interest }}</p>
+          {% endfor %}
           </p>
         </div>
 

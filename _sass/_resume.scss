@@ -360,7 +360,6 @@
     margin: 0; 
     margin-top: 0.5in;
     margin-bottom: 0.5in;
-    height: auto;
   }
 
   @page :first {
@@ -381,14 +380,24 @@
   .no-print { display: none !important }
   .print-only { display: block !important }
   body { font-size: 12px; line-height: 1rem; }
+
   .header-name {
     margin: 0 auto 0 auto !important;
     font-size: 2rem !important;
   }
+
   #blurb {
-    font-size: 1em !important;
+    font-size: 0.75rem !important;
+    line-height: 1.25rem !important;
     margin: 0 auto 0 auto !important;
   }
+
+  .interest {
+    page-break-inside: always;
+    margin: 8px;
+    display: inline-block;
+  }
+
   .section-header {
     @include section_border_thin;
     margin-bottom: 1rem !important;
@@ -397,8 +406,8 @@
   }
 
   .content-section {
+    margin-bottom: 1rem !important;
 
-    margin-bottom: 2rem !important;
     .resume-item-title {
       font-size: 16px;
       line-height: .7em;
@@ -406,7 +415,11 @@
     .resume-item {
       margin-bottom: 1rem !important;
     }
-    .resume-item-copy { overflow: visible !important;}
+
+    .resume-item-copy {
+      //overflow: auto !important;
+    }
+
     .resume-item-details {
       font-size: 12px;
       margin: 0 0 .5rem;
