@@ -16,6 +16,9 @@
             <h1 class="header-name print-only" itemprop="name">
               {{ site.resume_name }}
             </h1>
+            <p class="contact-info print-only">
+              {{ site.resume_contact_address }} &bull; {{ site.resume_contact_email }} &bull; {{ site.resume_contact_telephone }}
+            </p>
             <div id="blurb">
               <p> {{ site.data.header.blurb }}</p>
             </div>
@@ -217,7 +220,7 @@
       {% endif %}
 
       {% if site.resume_section_contact_me %}
-      <section class="content-section">
+      <section class="content-section no-print">
         <header class="section-header">
           <h2>Contact me</h2>
         </header>

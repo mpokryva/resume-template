@@ -318,6 +318,11 @@
 
 @media print {
 
+  .contact-info {
+    margin: 1em !important;
+    font-size: 14px !important;
+  }
+
   #header-content {
     margin: 0 auto 0 auto !important;
     width: 80vw !important;
