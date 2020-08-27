@@ -65,7 +65,10 @@
 
       <!-- You can turn off the avatar in _config.yml by setting to false -->
       {% if site.resume_avatar == 'true' %}
-      <img src="images/avatar.png" id="avatar" alt="my photo" class="no-print no-mobile" itemprop="image">
+      <figure class="no-print no-mobile">
+      <img src="images/avatar.png" id="avatar" alt="my photo" itemprop="image">
+      <figcaption>{{ site.data.avatar.caption }}</figcaption>
+      </figure>
       {% endif %}
 
       {% if site.resume_section_experience %}
