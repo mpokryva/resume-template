@@ -192,6 +192,17 @@
 
 }
 
+figcaption {
+  text-align: center;
+  margin: 1em;
+  color: $primary;
+}
+
+figure {
+  margin-bottom: 10%;
+}
+
+
 #avatar {
   width: 250px;
   max-width: 100%;
@@ -199,7 +210,6 @@
   @include border-radius(50%);
   margin: auto auto;
   display: block;
-  margin-bottom: 10%;
   bottom: 3vw;
 }
 
