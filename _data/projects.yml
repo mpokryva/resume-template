@@ -3,7 +3,7 @@
   url: https://github.com/mpokryva/bezier-surface-cnn/blob/master/Bezier_Surface_Reconstruction.pdf
   description: |
     <ul>
-    <li>Authored a paper on using Convolutional Neural Networks (CNNs) to reconstruct 3D Bézier Surfaces from 2D grayscale images.</li>
+    <li>Wrote a paper on using Convolutional Neural Networks (CNNs) to reconstruct 3D Bézier Surfaces from 2D grayscale images.</li>
     <li>Independently conducted background research, and designed and implemented neural nets using the Keras framework.</li>
     </ul>
 
@@ -32,4 +32,4 @@
   duration: January 2018 &mdash; February 2018
   url: https://github.com/mpokryva/LineTrackerPy
   description: |
-    Independently assembled and programmed a robot using a Raspberry Pi, OpenCV, and Python, to autonomously follow a pattern. Developed and optimized digital PID control to achieve high tracking accuracy and speed.
+    Independently assembled and programmed a robot using a Raspberry Pi, OpenCV, and Python, to autonomously follow a pattern. Implemented and optimized digital PID control to achieve high tracking accuracy and speed.
