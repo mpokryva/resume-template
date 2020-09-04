@@ -10,14 +10,14 @@
       <div id="header-container">
         <div id="gradient-header">
           <div id="header-content">
-            <h1 class="header-name no-print" itemprop="name">
+            <h1 id="header-name" class="no-print" itemprop="name">
               Hi, I'm {{ site.resume_name }}
             </h1>
-            <h1 class="header-name print-only" itemprop="name">
+            <h1 id="header-name" class="print-only" itemprop="name">
               {{ site.resume_name }}
             </h1>
             <p class="contact-info print-only">
-              {{ site.resume_contact_address }} &bull; {{ site.resume_contact_email }} &bull; {{ site.resume_contact_telephone }}
+            {{ site.resume_contact_address }} &bull; {{ site.resume_contact_email }} &bull; {{ site.resume_contact_telephone }} &bull; <a href="{{ site.url}}" id="contact-url">{{ site.display_url }}</a>
             </p>
             <div id="blurb">
               <p> {{ site.data.header.blurb }}</p>

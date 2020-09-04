@@ -85,7 +85,7 @@
       //text-align: center;
     }
 
-    .header-name {
+    #header-name {
       @include sans;
       font-size: 3rem;
       position: relative;
@@ -199,9 +199,9 @@ figcaption {
 }
 
 figure {
+  margin-top: 0;
   margin-bottom: 10%;
 }
-
 
 #avatar {
   width: 250px;
@@ -328,14 +328,27 @@ figure {
 
 @media print {
 
+  .wrapper {
+    max-width: none;
+    padding: 0;
+  }
+
   .contact-info {
     margin: 1em !important;
     font-size: 14px !important;
+    #contact-url {
+      color: $primary !important;
+      font-weight: normal;
+    }
   }
 
   #header-content {
     margin: 0 auto 0 auto !important;
     width: 80vw !important;
+
+    #header-name {
+      margin-top: 0 !important;
+    }
   }
 
   #gradient-header {
@@ -346,19 +359,15 @@ figure {
   }
 
   @page { 
-    margin: 0; 
+    margin: 0;
     margin-top: 0.5in;
     margin-bottom: 0.5in;
   }
 
-  @page :first {
-    margin-top: 0in;
-  }
-
   body { 
-    margin: 1.6cm;
-    font-size: 12px;
-    line-height: 1rem; 
+    margin: 0 0.5in 0 0.5in;
+    font-size: 12px !important;
+    line-height: normal !important;
   }
 
   #top {
@@ -370,7 +379,7 @@ figure {
   .print-only { display: block !important }
   body { font-size: 12px; line-height: 1rem; }
 
-  .header-name {
+  #header-name {
     margin: 0 auto 0 auto !important;
     font-size: 2rem !important;
   }
