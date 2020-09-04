@@ -1,5 +1,6 @@
 # Site settings
 url: https://itsmiki.com
+display_url: itsmiki.com
 repository: mpokryva/resume-template
 title: "Miki Pokryvailo"
 description: "Backend Software Engineer"
