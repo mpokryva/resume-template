@@ -4,6 +4,7 @@
   summary: |
     <ul>
     <li>Work on a core platform component, a highly automated API framework that’s leveraged widely across Confluent Cloud services. Use Go, Bash, OpenAPI, protobuf/gRPC, and Postgres.</li>
+    <li> Won 1st place at a Confluent hackathon by speeding up service deployments to our test environment by nearly 7x, and enabling developers to interactively debug their test environments. The previous debugging workflow consisted of adding print statements and redploying services until the bug was found. It's likely that this workflow has made debugging cloud services an order of magnitude faster for many engineers at Confluent.
     <li>Developed a mechanism to measure integration test coverage for the Confluent CLI (command line interface), a tool used
     extensively by both Confluent and its customers. On my own accord, I generalized the solution, <a href="https://github.com/confluentinc/bincover">open-sourced</a> it, and wrote
     an accompanying <a href="https://www.confluent.io/blog/measure-go-code-coverage-with-bincover/">blog post</a>.</li>

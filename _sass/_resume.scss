@@ -43,6 +43,10 @@
   display: inline;
 }
 
+.page-break-before {
+   page-break-before : always !important;
+}
+
 #top { padding: 1.5rem 0;
   padding-top: 0;
 
@@ -105,8 +109,8 @@
       margin-top: 1em;
       margin-bottom: 1em;
     }
-
   }
+
 
   #image-container {
     position: relative;
