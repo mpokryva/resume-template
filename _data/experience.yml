@@ -8,8 +8,8 @@
     <li>Developed a mechanism to measure integration test coverage for the Confluent CLI (command line interface), a tool used
     extensively by both Confluent and its customers. On my own accord, I generalized the solution, <a href="https://github.com/confluentinc/bincover">open-sourced</a> it, and wrote
     an accompanying <a href="https://www.confluent.io/blog/measure-go-code-coverage-with-bincover/">blog post</a>.</li>
-    <li>Won the People’s Choice Award at Confluent’s first hackathon for developing a feature that significantly
-    improved the usability of the CLI. This was the only award at the hackathon granted democratically, demonstrating the demand and viability of our project. I’m currently the engineering lead on the project to ship this feature.</li>
+    <li>Won the People’s Choice Award at Confluent’s first hackathon for developing an interactive shell feature that significantly
+    improved the usability of the CLI. This was the only award at the hackathon granted democratically, demonstrating the demand and viability of our project. I was the engineering lead to ship this feature into production, and did so successfully.</li>
     <li>Launched an initiative to improve the quality of the CLI in which I single-handedly completed a refactoring of several thousand lines of code. This significantly improved the flexibility and robustness of the codebase and fixed a number of critical bugs. I received an “engineering superstar” award for this after being at Confluent for only four months.</li>
     <li>Implemented a new type of API key and related API key-based authentication that’s widely used in Confluent’s UI and APIs.</li>
     <li>Integrated tools in CI pipelines to ensure backward compatibility was maintained across Confluent’s private and public APIs.</li>
