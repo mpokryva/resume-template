@@ -97,7 +97,7 @@
 		margin-bottom: 20vw;
 		//text-align: center;
 	}
-	#header-name {
+	.header-bold-text {
 		@include sans;
 		font-size: 3rem;
 		position: relative;
@@ -335,7 +335,7 @@ figure {
 	#header-content {
 		margin: 0 auto 0 auto !important;
 		width: 80vw !important;
-		#header-name {
+		.header-bold-text {
 			margin-top: 0 !important;
 		}
 	}
@@ -368,7 +368,7 @@ figure {
 		font-size: 12px;
 		line-height: 1rem;
 	}
-	#header-name {
+	.header-bold-text {
 		margin: 0 auto 0 auto !important;
 		font-size: 2rem !important;
 	}

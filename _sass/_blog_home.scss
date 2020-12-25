@@ -54,3 +54,50 @@ blockquote {
     margin-bottom: 0;
   }
 }
+
+#blog-header {
+  // TODO: Start at dynamic height.
+}
+
+.blog-header-initial {
+  height: 50vw;
+}
+
+$blog-header-final-height: 25vw;
+
+.animation-contract {
+  animation-name: contract;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.animation-fadein {
+  animation: fadein 3s;
+  opacity: 0;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+#blog-welcome {
+  margin-left: 10vw;
+  margin-top: 7.5vw;
+}
+
+@keyframes contract {
+  to {
+    height: $blog-header-final-height;
+  }
+}
+
+.blog-header-final {
+  height: $blog-header-final-height;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

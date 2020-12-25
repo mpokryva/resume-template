@@ -6,7 +6,8 @@
   <body>
 
     <main class="page-content" aria-label="Content">
-      <div class="gradient-header">
+      <div id="blog-header" class="gradient-header blog-header-initial">
+        <h1 id="blog-welcome" class="header-bold-text">Welcome to my blog!</h1>
         <svg class="triangle-svg" class="no-print" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
           <polygon fill="white" points="0,100 100,100 100,0"/>
         </svg>
@@ -14,11 +15,22 @@
           <polygon fill="white" points="0,0 0,100 100,100 100,0"/>
         </svg>
       </div>
+      <script>
+        if (window.sessionStorage.getItem("animated") === null) {
+          document.getElementById("blog-header").classList.add("animation-contract");
+          document.getElementById("blog-welcome").classList.add("animation-fadein");
+         window.sessionStorage.setItem("animated", true);
+        } else {
+          document.getElementById("blog-header").classList.remove("blog-header-initial");
+          document.getElementById("blog-header").classList.add("blog-header-final");
+        }
+      </script>
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
 
   </body>
+
 
 </html>
