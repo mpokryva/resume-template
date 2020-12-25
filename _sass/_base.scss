@@ -73,3 +73,7 @@ body{
   color: #fff;
   text-shadow: none;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
