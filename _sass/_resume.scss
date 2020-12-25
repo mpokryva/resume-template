@@ -1,448 +1,415 @@
 // Resume styles
 // ---------------------------------------/
-
 // util
-*{ color-adjust: exact;  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+* {
+	color-adjust: exact;
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+}
 
 .section-header {
-  @include section_border;
-  margin-bottom: 1.5rem;
-  color: $secondary;
-
-  h2 {
-    @include sans;
-    font-weight: 900;
-    font-size: 1.75rem;
-    letter-spacing: -.05rem;
-    margin: 0;
-  }
+	@include section_border;
+	margin-bottom: 1.5rem;
+	color: $secondary;
+	h2 {
+		@include sans;
+		font-weight: 900;
+		font-size: 1.75rem;
+		letter-spacing: -.05rem;
+		margin: 0;
+	}
 }
 
 * {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 
 #header-container a:link {
-  color: $accent;
+	color: $accent;
 }
 
 #header-container {
-    #blog-url {
-      background: $secondary;
-      text-align: right;
-    }
-    #blog-url p {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding: 1vw 10vw 0 0;
-    }
+	#blog-url {
+		background: $secondary;
+		text-align: right;
+	}
+	#blog-url p {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 1vw 10vw 0 0;
+	}
 }
 
 #header-container a:visited {
-  color: $accent;
+	color: $accent;
 }
 
 // page header styles
-
 #contact-me-email {
-  background: #e3f5ff;
-  color: $primary;
-  border-radius: 5px;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
-  font-family: monospace;
-  display: inline;
+	background: #e3f5ff;
+	color: $primary;
+	border-radius: 5px;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	font-family: monospace;
+	display: inline;
 }
 
 .page-break-before {
-   page-break-before : always !important;
+	page-break-before: always !important;
 }
 
-#top { padding: 1.5rem 0;
-  padding-top: 0;
+.triangle-svg {
+	position: absolute;
+	bottom: 0vw;
+	width: 100%;
+	height: 15vw;
+	margin-bottom: -1px;
+	/* set height to pixels if you want angle to change with screen width */
+}
 
-  #triangle-svg {
-    position: absolute;
-    bottom: 0vw;
-    width: 100%;
-    height: 15vw;
-    margin-bottom: -1px;
-    /* set height to pixels if you want angle to change with screen width */
-  }
+.spacer-svg {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 0vw;
+	margin-bottom: -1px;
+}
 
-  #spacer-svg {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0vw;
-    margin-bottom: -1px;
-  }
+.gradient-header {
+	display: flex;
+	overflow: hidden;
+	position: relative;
+	background-color: $secondary;
+	//background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
+	//background: #d6e5fa;
+	//background: #94d8ff;
+	color: #406098;
+	font-family: sans-serif;
+	text-align: left;
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+	#header-content {
+		width: 50vw;
+		margin-top: 10vh;
+		margin-left: 10vw;
+		margin-right: auto;
+		margin-bottom: 20vw;
+		//text-align: center;
+	}
+	#header-name {
+		@include sans;
+		font-size: 3rem;
+		position: relative;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		letter-spacing: -.15rem;
+		line-height: 1;
+	}
+	p {
+		@include sans;
+		font-size: 1.5em;
+		margin-top: 0.5em;
+	}
+	#blurb {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+}
 
-  #gradient-header {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    background-color: $secondary;
-    //background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
-    //background: #d6e5fa;
-    //background: #94d8ff;
-    color: #406098;
-    font-family: sans-serif;
-    text-align: left;
-    text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
-
-
-    #header-content {
-      width: 50vw;
-      margin-top: 10vh;
-      margin-left: 10vw;
-      margin-right: auto;
-      margin-bottom: 20vw;
-      //text-align: center;
-    }
-
-    #header-name {
-      @include sans;
-      font-size: 3rem;
-      position: relative;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      letter-spacing: -.15rem;
-      line-height: 1;
-    }
-
-    p {
-      @include sans;
-      font-size: 1.5em;
-      margin-top: 0.5em;
-    }
-
-    #blurb {
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-  }
-
-
-  #image-container {
-    position: relative;
-    bottom: 8vw;
-    //transform: rotate(-11deg);
-    text-align: center;
-    margin-left: 3vw;
-    margin-right: 3vw;
-  }
-
-  #lottie-animation {
-    width: 50vw;
-    display: inline-block;
-    margin-top: 8vw;
-    //margin-right: 5vw;
-  }
-
-
-  .header-contact-info {
-    @include sans;
-    text-align: center;
-  }
-  .header-contact-info p a {
-    color: inherit;
-  }
-
-
-  .title-bar {
-    @include section_border;
-    margin-top: 2rem;
-    padding: .4rem 0;
-    @include clearfix;
-
-    .header-title {
-      @include sans_bold;
-      font-weight: 300;
-      font-size: 1.75rem;
-      line-height: 2rem;
-      letter-spacing: -.05rem;
-      text-align: center;
-      margin: 0 0 .5rem;
-
-      @include media_larger_than_mobile {
-        float: left;
-        margin: 0;
-      }
-    }
-  }
-
-  .executive-summary {
-    //margin-top: 5vw;
-    @include media_larger_than_mobile { font-size: 1.125rem; }
-  }
+#top {
+	padding: 1.5rem 0;
+	padding-top: 0;
+	#image-container {
+		position: relative;
+		bottom: 8vw;
+		//transform: rotate(-11deg);
+		text-align: center;
+		margin-left: 3vw;
+		margin-right: 3vw;
+	}
+	#lottie-animation {
+		width: 50vw;
+		display: inline-block;
+		margin-top: 8vw;
+		//margin-right: 5vw;
+	}
+	.header-contact-info {
+		@include sans;
+		text-align: center;
+	}
+	.header-contact-info p a {
+		color: inherit;
+	}
+	.title-bar {
+		@include section_border;
+		margin-top: 2rem;
+		padding: .4rem 0;
+		@include clearfix;
+		.header-title {
+			@include sans_bold;
+			font-weight: 300;
+			font-size: 1.75rem;
+			line-height: 2rem;
+			letter-spacing: -.05rem;
+			text-align: center;
+			margin: 0 0 .5rem;
+			@include media_larger_than_mobile {
+				float: left;
+				margin: 0;
+			}
+		}
+	}
+	.executive-summary {
+		//margin-top: 5vw;
+		@include media_larger_than_mobile {
+			font-size: 1.125rem;
+		}
+	}
 }
 
 @include media_mobile {
-  .no-mobile { 
-    display: none !important;
-  }
-
-  #gradient-header {
-    flex-direction: column;
-
-    #header-content {
-      width: 85vw !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      text-align: center;
-    }
-
-    #lottie-animation {
-      width: 100vw !important;
-    }
-  }
-
-  #image-container {
-    bottom: 0 !important;
-  }
-
-  #header-container {
-    margin-bottom: 15vw !important;
-  }
-
+	.no-mobile {
+		display: none !important;
+	}
+	.gradient-header {
+		flex-direction: column;
+		#header-content {
+			width: 85vw !important;
+			margin-left: auto !important;
+			margin-right: auto !important;
+			text-align: center;
+		}
+		#lottie-animation {
+			width: 100vw !important;
+		}
+	}
+	#image-container {
+		bottom: 0 !important;
+	}
+	#header-container {
+		margin-bottom: 15vw !important;
+	}
 }
 
 figcaption {
-  text-align: center;
-  margin: 1em;
-  color: $primary;
+	text-align: center;
+	margin: 1em;
+	color: $primary;
 }
 
 figure {
-  margin-top: 0;
-  margin-bottom: 10%;
+	margin-top: 0;
+	margin-bottom: 10%;
 }
 
 #avatar {
-  width: 250px;
-  max-width: 100%;
-  overflow: hidden;
-  @include border-radius(50%);
-  margin: auto auto;
-  display: block;
-  bottom: 3vw;
+	width: 250px;
+	max-width: 100%;
+	overflow: hidden;
+	@include border-radius(50%);
+	margin: auto auto;
+	display: block;
+	bottom: 3vw;
 }
 
 .icon-links {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  top: 4px;
-  text-align: center;
-  border-top: 2px solid #c7c7c7;
-  padding-top: .4rem;
-
-  @include media_larger_than_mobile {
-    float: right;
-    border-top: none;
-    padding-top: 0;
-  }
-
-  .icon-link-item {
-    display: inline-block;
-    margin-left: 5px;
-  }
-
-  .icon-link { display: inline-block;
-
-    &:hover .icon path {
-      fill: $black;
-      @include transition(all .2s ease);
-    }
-  }
-
-  .icon {
-    height: 28px;
-  }
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	top: 4px;
+	text-align: center;
+	border-top: 2px solid #c7c7c7;
+	padding-top: .4rem;
+	@include media_larger_than_mobile {
+		float: right;
+		border-top: none;
+		padding-top: 0;
+	}
+	.icon-link-item {
+		display: inline-block;
+		margin-left: 5px;
+	}
+	.icon-link {
+		display: inline-block;
+		&:hover .icon path {
+			fill: $black;
+			@include transition(all .2s ease);
+		}
+	}
+	.icon {
+		height: 28px;
+	}
 }
 
 .contact-button {
-  @include border-radius(3px);
-  background-color: #efefef;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  margin: 1.5rem auto;
-  width: 220px;
-  font-size: 1.375rem;
-  @include sans_light;
-  color: $black;
-  line-height: 55px;
-  @include transition(all .2s ease);
-
-  &:hover {
-    background-color: $black;
-    color: #fff;
-  }
-
-  &.not-looking { width: 400px; }
+	@include border-radius(3px);
+	background-color: #efefef;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 1.5rem auto;
+	width: 220px;
+	font-size: 1.375rem;
+	@include sans_light;
+	color: $black;
+	line-height: 55px;
+	@include transition(all .2s ease);
+	&:hover {
+		background-color: $black;
+		color: #fff;
+	}
+	&.not-looking {
+		width: 400px;
+	}
 }
 
 // resume content styles
-
 .content-section {
-  margin: 0 0 3rem;
-
-  .resume-item { margin-bottom: 2rem; }
-
-  .resume-item-title {
-    @include sans;
-    margin: 0 0 .75rem;
-    font-size: 1.5rem;
-    letter-spacing: -.05rem;
-    line-height: 1;
-  }
-
-  .resume-item-details {
-    font-size: 1.125rem;
-    margin: 0 0 .75rem;
-    line-height: 1;
-
-    &.award-title {
-      font-size: 1rem;
-    }
-  }
-
-
-  .resume-item-copy { margin: .75rem 0 0; }
+	margin: 0 0 3rem;
+	.resume-item {
+		margin-bottom: 2rem;
+	}
+	.resume-item-title {
+		@include sans;
+		margin: 0 0 .75rem;
+		font-size: 1.5rem;
+		letter-spacing: -.05rem;
+		line-height: 1;
+	}
+	.resume-item-details {
+		font-size: 1.125rem;
+		margin: 0 0 .75rem;
+		line-height: 1;
+		&.award-title {
+			font-size: 1rem;
+		}
+	}
+	.resume-item-copy {
+		margin: .75rem 0 0;
+	}
 }
 
 // footer styles
-
 .page-footer {
-  border-top: 4px solid #c7c7c7;
-  padding-top: .5rem;
-  text-align: center;
-  margin-bottom: 1em;
-
-  .footer-line {
-    margin: 0;
-    font-size: .75em;
-    color: #999;
-  }
+	border-top: 4px solid #c7c7c7;
+	padding-top: .5rem;
+	text-align: center;
+	margin-bottom: 1em;
+	.footer-line {
+		margin: 0;
+		font-size: .75em;
+		color: #999;
+	}
 }
 
 .social-icon {
-  fill: #c6cbd1;
-  margin: 0.5vw;
-  height: 24px;
-  width: 24px;
+	fill: #c6cbd1;
+	margin: 0.5vw;
+	height: 24px;
+	width: 24px;
 }
 
 .social-icon:hover {
-  fill: $primary;
+	fill: $primary;
 }
 
-.print-only { display: none !important }
+.print-only {
+	display: none !important
+}
 
 @media print {
-
-  .wrapper {
-    max-width: none;
-    padding: 0;
-  }
-
-  .contact-info {
-    margin: 1em !important;
-    font-size: 14px !important;
-    #contact-url {
-      color: $primary !important;
-      font-weight: normal;
-    }
-  }
-
-  #header-content {
-    margin: 0 auto 0 auto !important;
-    width: 80vw !important;
-
-    #header-name {
-      margin-top: 0 !important;
-    }
-  }
-
-  #gradient-header {
-    background: none !important;
-    display: block !important;
-    text-align: center !important;
-    text-shadow: none !important;
-  }
-
-  @page { 
-    margin: 0;
-    margin-top: 0.5in;
-    margin-bottom: 0.5in;
-  }
-
-  body { 
-    margin: 0 0.5in 0 0.5in;
-    font-size: 12px !important;
-    line-height: 1rem !important;
-  }
-
-  #top {
-    padding-bottom: 0 !important;
-  }
-
-
-  .no-print { display: none !important }
-  .print-only { display: block !important }
-  body { font-size: 12px; line-height: 1rem; }
-
-  #header-name {
-    margin: 0 auto 0 auto !important;
-    font-size: 2rem !important;
-  }
-
-  #blurb {
-    font-size: 0.75rem !important;
-    line-height: 1.25rem !important;
-    margin: 0 auto 0 auto !important;
-  }
-
-  .interest {
-    page-break-inside: always;
-    margin: 8px;
-    display: inline-block;
-  }
-
-  .section-header {
-    @include section_border_thin;
-    margin-bottom: 1rem !important;
-    page-break-inside: avoid;
-    h2 { font-size: 1.2rem; line-height: 1.0rem; }
-  }
-
-  .content-section {
-    margin-bottom: 1rem !important;
-
-    .resume-item-title {
-      font-size: 16px;
-      line-height: .7em;
-    }
-    .resume-item {
-      margin-bottom: 1rem !important;
-    }
-
-    .resume-item-copy {
-      //overflow: auto !important;
-    }
-
-    .resume-item-details {
-      font-size: 12px;
-      margin: 0 0 .5rem;
-      line-height: .7em;
-
-      &.award-title {
-        font-size: 11px;
-      }
-    }
-  }
+	.wrapper {
+		max-width: none;
+		padding: 0;
+	}
+	.contact-info {
+		margin: 1em !important;
+		font-size: 14px !important;
+		#contact-url {
+			color: $primary !important;
+			font-weight: normal;
+		}
+	}
+	#header-content {
+		margin: 0 auto 0 auto !important;
+		width: 80vw !important;
+		#header-name {
+			margin-top: 0 !important;
+		}
+	}
+	.gradient-header {
+		background: none !important;
+		display: block !important;
+		text-align: center !important;
+		text-shadow: none !important;
+	}
+	@page {
+		margin: 0;
+		margin-top: 0.5in;
+		margin-bottom: 0.5in;
+	}
+	body {
+		margin: 0 0.5in 0 0.5in;
+		font-size: 12px !important;
+		line-height: 1rem !important;
+	}
+	#top {
+		padding-bottom: 0 !important;
+	}
+	.no-print {
+		display: none !important
+	}
+	.print-only {
+		display: block !important
+	}
+	body {
+		font-size: 12px;
+		line-height: 1rem;
+	}
+	#header-name {
+		margin: 0 auto 0 auto !important;
+		font-size: 2rem !important;
+	}
+	#blurb {
+		font-size: 0.75rem !important;
+		line-height: 1.25rem !important;
+		margin: 0 auto 0 auto !important;
+	}
+	.interest {
+		page-break-inside: always;
+		margin: 8px;
+		display: inline-block;
+	}
+	.section-header {
+		@include section_border_thin;
+		margin-bottom: 1rem !important;
+		page-break-inside: avoid;
+		h2 {
+			font-size: 1.2rem;
+			line-height: 1.0rem;
+		}
+	}
+	.content-section {
+		margin-bottom: 1rem !important;
+		.resume-item-title {
+			font-size: 16px;
+			line-height: .7em;
+		}
+		.resume-item {
+			margin-bottom: 1rem !important;
+		}
+		.resume-item-copy {
+			//overflow: auto !important;
+		}
+		.resume-item-details {
+			font-size: 12px;
+			margin: 0 0 .5rem;
+			line-height: .7em;
+			&.award-title {
+				font-size: 11px;
+			}
+		}
+	}
 }
