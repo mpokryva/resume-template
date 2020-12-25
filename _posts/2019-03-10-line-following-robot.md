@@ -4,7 +4,7 @@ title: "Raspberry Pi Line Following Robot Tutorial"
 date: 2019-03-10 20:11:14 -0500
 ---
 
-<img src="/images/line-robot/robot_moving.gif" width="740">
+<img class="full-img" src="/images/line-robot/robot_moving.gif">
 
 ## What do you get out of this project?
  1. Experience assembling and soldering and assembling Raspberry Pi robot
@@ -34,14 +34,14 @@ Since Adafruit's assembly guide is for a generic, camera-less robot, we also nee
 
 | The finished robot | Close-up of the camera fixture | 
 | :----------------: |:----------------------------:  |
-| <img src="/images/line-robot/robot_closeup.png" width="400"> | <img src="/images/line-robot/camera_closeup.png" width="400"> |
+| <img class="full-img" src="/images/line-robot/robot_closeup.png"> | <img class="full-img" src="/images/line-robot/camera_closeup.png"> |
 
 ## 2. OpenCV image processing
 
 After we've assembled our robot, the next step in the process is to determine the robot's error at each frame, so we'll know how much to adjust. But, even before we do that, we should determine what error we're looking for. Simply put, **the error of the robot is its horizontal (x) distance from the center of the line.** If the robot is turned excessively to the left, for instance, the image it captures will show that it's off-center to the left. The challenge is in parsing out only the line in the image, and determining its center.
 
 
-| <img src="/images/line-robot/error_diagram.png" width="600" class="center"> | 
+| <img src="/images/line-robot/error_diagram.png" class="full-img center"> | 
 |:--:| 
 | Example: The robot is facing to the left, so the error we're trying to calculate is represented by the red line. <br> (Not to scale, obviously) |
 
