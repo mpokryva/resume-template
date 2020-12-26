@@ -11,6 +11,7 @@ ul {
 }
 
 .post-link {
+  font-weight: 600;
   font-size: 24px;
 }
 
@@ -55,20 +56,23 @@ blockquote {
   }
 }
 
-#blog-header {
+.blog-header {
   // TODO: Start at dynamic height.
+  display: block;
 }
 
 .blog-header-initial {
-  height: 50vw;
+  height: auto;
 }
 
 $blog-header-final-height: 25vw;
 
 .animation-contract {
-  animation-name: contract;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
+  //animation-name: contract;
+  //animation-duration: 1.5s;
+ // animation-fill-mode: forwards;
+ transform: scale(1);
+ margin-bottom: 15vw;
 }
 
 .animation-fadein {
@@ -78,19 +82,28 @@ $blog-header-final-height: 25vw;
   animation-fill-mode: forwards;
 }
 
-#blog-welcome {
-  margin-left: 10vw;
-  margin-top: 7.5vw;
+.blog-header-text {
+  margin: 0.67em 0;
+  font-weight: 600;
+  @include sans;
+  font-size: 3rem;
+  position: relative;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  letter-spacing: -.15rem;
+  line-height: 1;
+  font-size: 2.5rem;
 }
 
 @keyframes contract {
   to {
-    height: $blog-header-final-height;
+    margin-bottom: 15vw;
   }
 }
 
 .blog-header-final {
   height: $blog-header-final-height;
+  height: auto;
 }
 
 @keyframes fadein {
@@ -99,5 +112,12 @@ $blog-header-final-height: 25vw;
   }
   to {
     opacity: 1;
+  }
+}
+
+@include media_mobile {
+
+  #blog-welcome {
+    text-align: center;
   }
 }

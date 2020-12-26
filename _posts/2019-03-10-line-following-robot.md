@@ -253,5 +253,4 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", \
 ## The end result
 
 {% include youtube_video.html id="QYSfXf6VR3A" %}      
-<br>
 #### Full implementation can be found [here](https://github.com/mpokryva/LineTrackerPy).
