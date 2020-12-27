@@ -28,18 +28,19 @@ a:hover {
   text-decoration: none;
 }
 
-h2, h3, h4, strong, b {
-  //color: #7500ff;
-  //color: #00b7f9;
+h2,
+h3,
+h4,
+strong,
+b {
   color: $primary;
-  //  color: #16a085;
 }
 
 html {
   background: $white;
 }
 
-body{
+body {
   @include sans;
   color: $text_color;
   font-size: 1em;
@@ -47,8 +48,13 @@ body{
 }
 
 .wrapper:before,
-.wrapper:after { content:""; display:table; }
-.wrapper:after { clear: both; }
+.wrapper:after {
+  content: "";
+  display: table;
+}
+.wrapper:after {
+  clear: both;
+}
 .wrapper {
   max-width: 728px;
   padding: 0 24px;
@@ -59,9 +65,16 @@ body{
 // clearfix (now called group,
 // via http://css-tricks.com/snippets/css/clear-fix/)
 .group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both; }
-.group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
 
 ::-moz-selection {
   background: #406098;
@@ -73,7 +86,27 @@ body{
   color: #fff;
   text-shadow: none;
 }
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100;
+  overflow-x: hidden;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+// footer styles
+.page-footer {
+  align-self: end;
+	padding-top: .5rem;
+  padding-bottom: 1rem;
+	text-align: center;
+	.footer-line {
+		margin: 0;
+		font-size: .75em;
+		color: #999;
+	}
 }

@@ -292,26 +292,7 @@ figure {
 	}
 }
 
-// footer styles
-.page-footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-	padding-top: .5rem;
-  padding-bottom: 1rem;
-	text-align: center;
-	.footer-line {
-		margin: 0;
-		font-size: .75em;
-		color: #999;
-	}
-}
 
-.page-container {
-  min-height: 100vh;
-  position: relative;
-}
 
 .footer-border {
 	border-top: 4px solid #c7c7c7;
