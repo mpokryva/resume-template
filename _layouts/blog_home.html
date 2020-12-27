@@ -5,6 +5,7 @@
 
   <body>
 
+    <div class="page-container">
     <main class="page-content" aria-label="Content">
       <div class="blog-header gradient-header blog-header-initial">
         <div class="wrapper">
@@ -23,8 +24,10 @@
       </script>
       <div class="wrapper">
         {{ content }}
+        {% include footer.html %}
       </div>
     </main>
+    </div>
 
   </body>
 
