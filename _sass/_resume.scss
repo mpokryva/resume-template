@@ -76,7 +76,7 @@
 
 .gradient-header {
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 45% 55%;
 	overflow: hidden;
 	position: relative;
 	background-color: $secondary;
@@ -117,15 +117,11 @@
 	#image-container {
 		position: relative;
 		bottom: 8vw;
-		//transform: rotate(-11deg);
 		text-align: center;
-		margin-left: 3vw;
-		margin-right: 3vw;
 	}
 	#lottie-animation {
 		display: inline-block;
 		margin-top: 6vw;
-		//margin-right: 5vw;
 	}
 	.header-contact-info {
 		@include sans;
@@ -284,9 +280,6 @@ figure {
 
 
 
-.footer-border {
-	border-top: 4px solid #c7c7c7;
-}
 
 .social-icon {
 	fill: #c6cbd1;
