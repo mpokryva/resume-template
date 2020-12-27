@@ -5,7 +5,7 @@
 
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
-
+    <div class="page-container">
     <section id="top">
       <div id="header-container">
         <p id="blog-url"><a href="{{ site.blog_url }}">Check out my blog</a></p>
@@ -58,7 +58,6 @@
     {% else %}
     {% endif %}
 
-    </div>
 
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
@@ -254,6 +253,7 @@
       </section>
       <!-- end Links -->
       {% endif %}
+    </div>
       {% include footer.html %}
     </div>
   </body>
