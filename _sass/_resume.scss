@@ -7,10 +7,6 @@
 	print-color-adjust: exact;
 }
 
-#resume-header {
- // margin-top: -10vw;
-}
-
 .section-header {
 	@include section_border;
 	margin-bottom: 1.5rem;
@@ -92,11 +88,8 @@
 	text-align: left;
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 	#header-content {
-		//margin-top: 10vh;
 		margin-left: 10vw;
-		margin-right: auto;
 		margin-bottom: 20vw;
-		//text-align: center;
 	}
 	.header-bold-text {
 		@include sans;
@@ -130,7 +123,6 @@
 		margin-right: 3vw;
 	}
 	#lottie-animation {
-		width: 50vw;
 		display: inline-block;
 		margin-top: 6vw;
 		//margin-right: 5vw;
@@ -174,16 +166,11 @@
 		display: none !important;
 	}
 	.gradient-header {
-		display: grid;
+		grid-template-rows: auto auto;
 		grid-template-columns: auto;
 		#header-content {
-			width: 85vw !important;
-			margin-left: auto !important;
-			margin-right: auto !important;
+			margin-right: 10vw;
 			text-align: center;
-		}
-		#lottie-animation {
-			width: 100vw !important;
 		}
 	}
 	#image-container {
