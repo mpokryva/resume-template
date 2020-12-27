@@ -79,7 +79,8 @@
 }
 
 .gradient-header {
-	display: flex;
+	display: grid;
+	grid-template-columns: 40% 60%;
 	overflow: hidden;
 	position: relative;
 	background-color: $secondary;
@@ -91,7 +92,6 @@
 	text-align: left;
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 	#header-content {
-		width: 50vw;
 		//margin-top: 10vh;
 		margin-left: 10vw;
 		margin-right: auto;
@@ -174,7 +174,8 @@
 		display: none !important;
 	}
 	.gradient-header {
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: auto;
 		#header-content {
 			width: 85vw !important;
 			margin-left: auto !important;
