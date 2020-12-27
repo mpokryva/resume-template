@@ -102,7 +102,7 @@
 	}
 	p {
 		@include sans;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		margin-top: 0.5em;
 	}
 	#blurb {
@@ -168,9 +168,11 @@
 	.gradient-header {
 		grid-template-rows: auto auto;
 		grid-template-columns: auto;
+		p {
+			font-size: 1.25rem;
+		}
 		#header-content {
 			margin-right: 10vw;
-			text-align: center;
 		}
 	}
 	#image-container {

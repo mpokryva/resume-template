@@ -20,7 +20,6 @@ code {
   font-size: 0.9375em;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  //background-color: #eef;
 }
 
 code {
@@ -61,11 +60,6 @@ blockquote {
   display: block;
 }
 
-.blog-header-initial {
-  height: auto;
-}
-
-$blog-header-final-height: 25vw;
 
 .animation-contract {
   //animation-name: contract;
@@ -101,10 +95,6 @@ $blog-header-final-height: 25vw;
   }
 }
 
-.blog-header-final {
-  height: $blog-header-final-height;
-  height: auto;
-}
 
 @keyframes fadein {
   from {
