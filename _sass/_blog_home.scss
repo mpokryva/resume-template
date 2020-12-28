@@ -82,7 +82,7 @@ blockquote {
 }
 
 .blog-header-text {
-  margin: 0.67rem 0;
+  margin: 0.67em 0;
   font-weight: 600;
   @include sans;
   position: relative;
@@ -91,13 +91,15 @@ blockquote {
 }
 
 #blog-welcome {
-  font-size: 2rem;
+  font-size: 30px;
+  float: left;
 }
 
 #home-link {
   float: right;
   color: $primary;
-  font-size: 1.5rem;
+  font-size: 1.5em;
+  line-height: 1.5;
 }
 
 @keyframes contract {
