@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign primary-color = '#406098' %}
+
 <section id="top">
   <div id="header-container">
     <div class="gradient-header">
@@ -20,14 +22,7 @@ layout: default
           <p> {{ site.data.header.blurb }}</p>
         </div>
       </div>
-      <svg class="triangle-svg" class="no-print" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
-        preserveAspectRatio="none">
-        <polygon fill="white" points="0,100 100,100 100,0" />
-      </svg>
-      <svg class="spacer-svg" class="no-print" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
-        preserveAspectRatio="none">
-        <polygon fill="white" points="0,0 0,100 100,100 100,0" />
-      </svg>
+      {% include slant.html fill=primary-color %}
       <div id="image-container" class="no-print">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player id="lottie-animation" src="images/growth-1.json" background="transparent" speed="1"
@@ -46,10 +41,8 @@ layout: default
     {% include icon-links.html %}
   </div>
   {% endif %}
-
-
-
 </section>
+
 {% if site.resume_looking_for_work == 'yes' %}
 <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
 {% elsif site.resume_looking_for_work == 'no' %}
@@ -58,7 +51,7 @@ layout: default
 {% endif %}
 
 
-<div class="wrapper" itemscope itemtype="http://schema.org/Person">
+<div id="photo-and-experience">
   <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}" />
   <meta itemprop="address" content="{{ site.resume_contact_address }}" />
 
@@ -90,9 +83,10 @@ layout: default
   </section>
   <!-- end Experience -->
   {% endif %}
+</div>
 
 
-
+<div id="projects">
   {% if site.resume_section_projects %}
   <!-- begin Projects -->
   <section class="content-section page-break-before">
@@ -111,149 +105,150 @@ layout: default
       <p class="resume-item-copy">{{ project.description }}</p>
     </div>
     {% endfor %}
-
   </section>
   <!-- end Projects -->
   {% endif %}
-
-  {% if site.resume_section_skills %}
-  <!-- begin Skills -->
-  <section class="content-section">
-
-    <header class="section-header">
-      <h2>Skills</h2>
-    </header>
-    {% for skill in site.data.skills %}
-    <div class="resume-item">
-      <h4 class="resume-item-details">{{ skill.skill }}</h4>
-      <p class="resume-item-copy">{{ skill.description }}</p>
-    </div>
-    {% endfor %}
-
-  </section>
-  <!-- end Skills -->
-  {% endif %}
-
-  {% if site.resume_section_education %}
-  <!-- begin Education -->
-  <section class="content-section">
-    <header class="section-header">
-      <h2>Education</h2>
-    </header>
-
-    {% for education in site.data.education %}
-    <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-      <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-      <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}
-      </h4>
-      <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
-      <p class="resume-item-copy" itemprop="description">
-      <ul class="resume-item-list">
-        {% for award in education.awards %}
-        <li>{{ award.award }}</li>
-        {% endfor %}
-      </ul>
-      </h5>
+</div>
 
 
-      <p class="resume-item-copy">{{ education.summary }}</p>
-    </div>
-    {% endfor %}
-  </section>
-  <!-- end Education -->
-  {% endif %}
+{% if site.resume_section_skills %}
+<!-- begin Skills -->
+<section class="content-section">
 
-  {% if site.resume_section_recognition %}
-  <!-- begin Recognition -->
-  <section class="content-section">
+  <header class="section-header">
+    <h2>Skills</h2>
+  </header>
+  {% for skill in site.data.skills %}
+  <div class="resume-item">
+    <h4 class="resume-item-details">{{ skill.skill }}</h4>
+    <p class="resume-item-copy">{{ skill.description }}</p>
+  </div>
+  {% endfor %}
 
-    <header class="section-header">
-      <h2>Recognition</h2>
-    </header>
+</section>
+<!-- end Skills -->
+{% endif %}
 
-    {% for recognition in site.data.recognitions %}
-    <div class="resume-item">
-      <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
-      <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
-      <p class="resume-item-copy">{{ recognition.summary }}</p>
-    </div>
-    {% endfor %}
+{% if site.resume_section_education %}
+<!-- begin Education -->
+<section class="content-section">
+  <header class="section-header">
+    <h2>Education</h2>
+  </header>
 
-  </section>
-  <!-- end Recognition -->
-  {% endif %}
-
-  {% if site.resume_section_associations %}
-  <!-- begin Associations -->
-  <section class="content-section">
-
-    <header class="section-header">
-      <h2>Associations</h2>
-    </header>
-
-    {% for association in site.data.associations %}
-    <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-      <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{
-          association.organization }}</a>{% else %}{{ association.organization }}{% endif %}
-      </h3>
-      <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
-      <p class="resume-item-copy">{{ association.summary }}</p>
-    </div>
-    {% endfor %}
-
-  </section>
-  <!-- end Associations -->
-  {% endif %}
-
-  {% if site.resume_section_interests %}
-  <!-- begin Interests -->
-  <section class="content-section page-break-before">
-
-    <header class="section-header">
-      <h2>When not working</h2>
-    </header>
-
-    <div class="resume-item">
-      <p class="resume-item-copy">
-        {% for interest in site.data.interests.description%}
-      <p class="interest">{{ interest }}</p>
+  {% for education in site.data.education %}
+  <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+    <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
+    <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}
+    </h4>
+    <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
+    <p class="resume-item-copy" itemprop="description">
+    <ul class="resume-item-list">
+      {% for award in education.awards %}
+      <li>{{ award.award }}</li>
       {% endfor %}
-      </p>
-    </div>
+    </ul>
+    </h5>
 
-  </section>
-  <!-- end Interests -->
-  {% endif %}
 
-  {% if site.resume_section_contact_me %}
-  <section class="content-section no-print">
-    <header class="section-header">
-      <h2>Contact me</h2>
-    </header>
+    <p class="resume-item-copy">{{ education.summary }}</p>
+  </div>
+  {% endfor %}
+</section>
+<!-- end Education -->
+{% endif %}
 
-    <p>
-      You can reach me at <span id="contact-me-email">"mpokryva" at "gmail" dot com</span>.
+{% if site.resume_section_recognition %}
+<!-- begin Recognition -->
+<section class="content-section">
+
+  <header class="section-header">
+    <h2>Recognition</h2>
+  </header>
+
+  {% for recognition in site.data.recognitions %}
+  <div class="resume-item">
+    <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
+    <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
+    <p class="resume-item-copy">{{ recognition.summary }}</p>
+  </div>
+  {% endfor %}
+
+</section>
+<!-- end Recognition -->
+{% endif %}
+
+{% if site.resume_section_associations %}
+<!-- begin Associations -->
+<section class="content-section">
+
+  <header class="section-header">
+    <h2>Associations</h2>
+  </header>
+
+  {% for association in site.data.associations %}
+  <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+    <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{
+        association.organization }}</a>{% else %}{{ association.organization }}{% endif %}
+    </h3>
+    <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
+    <p class="resume-item-copy">{{ association.summary }}</p>
+  </div>
+  {% endfor %}
+
+</section>
+<!-- end Associations -->
+{% endif %}
+
+{% if site.resume_section_interests %}
+<!-- begin Interests -->
+<section class="content-section page-break-before">
+
+  <header class="section-header">
+    <h2>When not working</h2>
+  </header>
+
+  <div class="resume-item">
+    <p class="resume-item-copy">
+      {% for interest in site.data.interests.description%}
+    <p class="interest">{{ interest }}</p>
+    {% endfor %}
     </p>
-  </section>
-  {% endif %}
+  </div>
 
-  {% if site.resume_section_links %}
-  <!-- begin Links -->
-  <section class="content-section">
+</section>
+<!-- end Interests -->
+{% endif %}
 
-    <header class="section-header">
-      <h2>Additional Links</h2>
-    </header>
+{% if site.resume_section_contact_me %}
+<section class="content-section no-print">
+  <header class="section-header">
+    <h2>Contact me</h2>
+  </header>
 
-    <div class="resume-item">
-      <ul class="resume-item-list">
-        {% for link in site.data.links %}
-        <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
+  <p>
+    You can reach me at <span id="contact-me-email">"mpokryva" at "gmail" dot com</span>.
+  </p>
+</section>
+{% endif %}
 
-  </section>
-  <!-- end Links -->
-  {% endif %}
+{% if site.resume_section_links %}
+<!-- begin Links -->
+<section class="content-section">
+
+  <header class="section-header">
+    <h2>Additional Links</h2>
+  </header>
+
+  <div class="resume-item">
+    <ul class="resume-item-list">
+      {% for link in site.data.links %}
+      <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</section>
+<!-- end Links -->
+{% endif %}
 </div>
