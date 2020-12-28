@@ -63,9 +63,9 @@ blockquote {
 .animation-contract {
   //animation-name: contract;
   //animation-duration: 1.5s;
- // animation-fill-mode: forwards;
- transform: scale(1);
- margin-bottom: 15vw;
+  // animation-fill-mode: forwards;
+  transform: scale(1);
+  margin-bottom: 15vw;
 }
 
 .animation-fadein {
@@ -80,12 +80,11 @@ blockquote {
   font-weight: 600;
   @include sans;
   position: relative;
-  letter-spacing: -.15rem;
+  letter-spacing: -0.15rem;
   line-height: 1;
 }
 
 #blog-welcome {
-  font-size: 30px;
   float: left;
 }
 
@@ -103,7 +102,6 @@ blockquote {
   }
 }
 
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -114,8 +112,15 @@ blockquote {
 }
 
 @include media_mobile {
-
   #blog-welcome {
     text-align: center;
   }
+}
+
+.post-list-heading {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.post-list h3 {
+  margin-bottom: 1em;
 }
