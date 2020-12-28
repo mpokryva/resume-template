@@ -4,7 +4,6 @@ layout: default
 
 <section id="top">
   <div id="header-container">
-    <p id="blog-url"><a href="{{ site.blog_url }}">Check out my blog</a></p>
     <div class="gradient-header">
       <div id="header-content">
         <h1 class="header-bold-text no-print" itemprop="name">
@@ -194,8 +193,8 @@ layout: default
 
     {% for association in site.data.associations %}
     <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-      <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a
-          href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}
+      <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{
+          association.organization }}</a>{% else %}{{ association.organization }}{% endif %}
       </h3>
       <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
       <p class="resume-item-copy">{{ association.summary }}</p>

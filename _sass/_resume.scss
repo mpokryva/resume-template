@@ -15,7 +15,7 @@
 		@include sans;
 		font-weight: 900;
 		font-size: 1.75rem;
-		letter-spacing: -.05rem;
+		letter-spacing: -0.05rem;
 		margin: 0;
 	}
 }
@@ -33,8 +33,8 @@
 	#blog-url {
 		background: $secondary;
 		text-align: right;
-    margin: 0;
-    padding: 2em 5em 0 0;
+		margin: 0;
+		padding: 2em 5em 0 0;
 	}
 }
 
@@ -88,6 +88,7 @@
 	text-align: left;
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 	#header-content {
+		margin-top: 10vh;
 		margin-left: 10vw;
 		margin-bottom: 20vw;
 	}
@@ -95,9 +96,8 @@
 		@include sans;
 		font-size: 3rem;
 		position: relative;
-		margin-top: 1em;
 		margin-bottom: 1em;
-		letter-spacing: -.15rem;
+		letter-spacing: -0.15rem;
 		line-height: 1;
 	}
 	p {
@@ -133,16 +133,16 @@
 	.title-bar {
 		@include section_border;
 		margin-top: 2rem;
-		padding: .4rem 0;
+		padding: 0.4rem 0;
 		@include clearfix;
 		.header-title {
 			@include sans_bold;
 			font-weight: 300;
 			font-size: 1.75rem;
 			line-height: 2rem;
-			letter-spacing: -.05rem;
+			letter-spacing: -0.05rem;
 			text-align: center;
-			margin: 0 0 .5rem;
+			margin: 0 0 0.5rem;
 			@include media_larger_than_mobile {
 				float: left;
 				margin: 0;
@@ -208,7 +208,7 @@ figure {
 	top: 4px;
 	text-align: center;
 	border-top: 2px solid #c7c7c7;
-	padding-top: .4rem;
+	padding-top: 0.4rem;
 	@include media_larger_than_mobile {
 		float: right;
 		border-top: none;
@@ -222,7 +222,7 @@ figure {
 		display: inline-block;
 		&:hover .icon path {
 			fill: $black;
-			@include transition(all .2s ease);
+			@include transition(all 0.2s ease);
 		}
 	}
 	.icon {
@@ -242,7 +242,7 @@ figure {
 	@include sans_light;
 	color: $black;
 	line-height: 55px;
-	@include transition(all .2s ease);
+	@include transition(all 0.2s ease);
 	&:hover {
 		background-color: $black;
 		color: #fff;
@@ -260,26 +260,23 @@ figure {
 	}
 	.resume-item-title {
 		@include sans;
-		margin: 0 0 .75rem;
+		margin: 0 0 0.75rem;
 		font-size: 1.5rem;
-		letter-spacing: -.05rem;
+		letter-spacing: -0.05rem;
 		line-height: 1;
 	}
 	.resume-item-details {
 		font-size: 1.125rem;
-		margin: 0 0 .75rem;
+		margin: 0 0 0.75rem;
 		line-height: 1;
 		&.award-title {
 			font-size: 1rem;
 		}
 	}
 	.resume-item-copy {
-		margin: .75rem 0 0;
+		margin: 0.75rem 0 0;
 	}
 }
-
-
-
 
 .social-icon {
 	fill: #c6cbd1;
@@ -293,7 +290,7 @@ figure {
 }
 
 .print-only {
-	display: none !important
+	display: none !important;
 }
 
 @media print {
@@ -335,10 +332,10 @@ figure {
 		padding-bottom: 0 !important;
 	}
 	.no-print {
-		display: none !important
+		display: none !important;
 	}
 	.print-only {
-		display: block !important
+		display: block !important;
 	}
 	body {
 		font-size: 12px;
@@ -364,14 +361,14 @@ figure {
 		page-break-inside: avoid;
 		h2 {
 			font-size: 1.2rem;
-			line-height: 1.0rem;
+			line-height: 1rem;
 		}
 	}
 	.content-section {
 		margin-bottom: 1rem !important;
 		.resume-item-title {
 			font-size: 16px;
-			line-height: .7em;
+			line-height: 0.7em;
 		}
 		.resume-item {
 			margin-bottom: 1rem !important;
@@ -381,8 +378,8 @@ figure {
 		}
 		.resume-item-details {
 			font-size: 12px;
-			margin: 0 0 .5rem;
-			line-height: .7em;
+			margin: 0 0 0.5rem;
+			line-height: 0.7em;
 			&.award-title {
 				font-size: 11px;
 			}
