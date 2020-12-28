@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  list-style-position:inside; 
+  list-style-position: inside;
 }
 
 main {
@@ -33,6 +33,7 @@ a:hover {
   text-decoration: none;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -40,6 +41,10 @@ strong,
 b {
   font-weight: bold;
   color: $primary;
+}
+
+p {
+  margin-top: 1rem;
 }
 
 html {
@@ -99,21 +104,20 @@ body {
 // footer styles
 .page-footer {
   align-self: end;
-	padding-top: .5rem;
+  padding-top: 0.5rem;
   padding-bottom: 1rem;
-	text-align: center;
-	.footer-line {
-		margin: 0;
-		font-size: .75em;
-		color: #999;
-	}
+  text-align: center;
+  .footer-line {
+    margin: 0;
+    font-size: 0.75em;
+    color: #999;
+  }
 }
 
 .footer-border {
   padding-top: 0.5rem;
-	border-top: 4px solid #c7c7c7;
+  border-top: 4px solid #c7c7c7;
 }
-
 
 .padding-0 {
   padding-left: 0 !important;
