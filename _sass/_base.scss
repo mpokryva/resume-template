@@ -52,14 +52,6 @@ body {
   line-height: 1.5;
 }
 
-.wrapper:before,
-.wrapper:after {
-  content: "";
-  display: table;
-}
-.wrapper:after {
-  clear: both;
-}
 .wrapper {
   max-width: 728px;
   padding: 0 24px;
