@@ -25,11 +25,12 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-#header-container a:link {
+#resume-header a:link {
 	color: $accent;
 }
 
-#header-container {
+#resume-header {
+	padding-top: 10vh;
 	#blog-url {
 		background: $secondary;
 		text-align: right;
@@ -38,7 +39,7 @@
 	}
 }
 
-#header-container a:visited {
+#resume-header a:visited {
 	color: $accent;
 }
 
@@ -91,9 +92,7 @@
 	text-align: left;
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 	#header-content {
-		margin-top: 10vh;
 		margin-left: 10vw;
-		margin-bottom: 10vw;
 	}
 	.header-bold-text {
 		@include sans;
@@ -115,11 +114,6 @@
 }
 
 #top {
-	#image-container {
-		position: relative;
-		bottom: 8vw;
-		text-align: center;
-	}
 	#lottie-animation {
 		display: inline-block;
 		margin-top: 6vw;
@@ -175,7 +169,7 @@
 	#image-container {
 		bottom: 0 !important;
 	}
-	#header-container {
+	#resume-header {
 		margin-bottom: 15vw !important;
 	}
 }

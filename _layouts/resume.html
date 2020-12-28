@@ -6,30 +6,26 @@ layout: default
 {% assign secondary-color = '#B7E5FF' %}
 
 <section id="top">
-  <div id="header-container">
-    <div class="gradient-header">
-      <div id="header-content">
-        <h1 class="header-bold-text no-print" itemprop="name">
-          Hi, I'm {{ site.resume_name }}
-        </h1>
-        <h1 class="header-bold-text print-only" itemprop="name">
-          {{ site.resume_name }}
-        </h1>
-        <p class="contact-info print-only">
-          {{ site.resume_contact_address }} &bull; {{ site.resume_contact_email }} &bull;
-          {{ site.resume_contact_telephone }} &bull; <a href="{{ site.url}}" id="contact-url">{{ site.display_url }}</a>
-        </p>
-        <div id="blurb">
-          <p> {{ site.data.header.blurb }}</p>
-        </div>
-      </div>
-      {% include slant.html fill='white' %}
-      <div id="image-container" class="no-print">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player id="lottie-animation" src="images/growth-1.json" background="transparent" speed="1"
-          id="header-image-1" loop autoplay></lottie-player>
+  <div id="resume-header" class="gradient-header">
+    <div id="header-content">
+      <h1 class="header-bold-text no-print" itemprop="name">
+        Hi, I'm {{ site.resume_name }}
+      </h1>
+      <h1 class="header-bold-text print-only" itemprop="name">
+        {{ site.resume_name }}
+      </h1>
+      <p class="contact-info print-only">
+        {{ site.resume_contact_address }} &bull; {{ site.resume_contact_email }} &bull;
+        {{ site.resume_contact_telephone }} &bull; <a href="{{ site.url}}" id="contact-url">{{ site.display_url }}</a>
+      </p>
+      <div id="blurb">
+        <p> {{ site.data.header.blurb }}</p>
       </div>
     </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player id="lottie-animation" class="no-print" src="images/growth-1.json" background="transparent" speed="1"
+      id="header-image-1" loop autoplay></lottie-player>
+    {% include slant.html fill='white' %}
   </div>
 
   {% if site.resume_include_title == 'yes' %}
