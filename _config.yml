@@ -58,4 +58,3 @@ plugins:
   - "jekyll-github-metadata"
 
 theme: minima
-blog_url: "/blog"
