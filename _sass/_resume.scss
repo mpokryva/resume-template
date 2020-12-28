@@ -25,22 +25,8 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-#resume-header a:link {
-	color: $accent;
-}
-
 #resume-header {
 	padding-top: 10vh;
-	#blog-url {
-		background: $secondary;
-		text-align: right;
-		margin: 0;
-		padding: 2em 5em 0 0;
-	}
-}
-
-#resume-header a:visited {
-	color: $accent;
 }
 
 // page header styles
@@ -83,10 +69,6 @@
 	grid-template-rows: auto auto auto;
 	overflow: hidden;
 	position: relative;
-	background-color: $secondary;
-	//background: linear-gradient(135deg, rgba(117,0,255,1) 0%, rgba(0,183,249,1) 56%, rgba(0,252,133,1) 100%);
-	//background: #d6e5fa;
-	//background: #94d8ff;
 	color: #406098;
 	font-family: sans-serif;
 	text-align: left;
@@ -116,7 +98,7 @@
 #top {
 	#lottie-animation {
 		display: inline-block;
-		margin-top: 6vw;
+		margin-top: 3vw;
 	}
 	.header-contact-info {
 		@include sans;
@@ -399,6 +381,12 @@ figure {
 .theme-secondary {
 	background: $secondary;
 	.section-header {
-		color: #0084cf;
+		color: #5277b6;
+	}
+	a:link {
+		color: $accent;
+	}
+	a:visited {
+		color: $accent;
 	}
 }

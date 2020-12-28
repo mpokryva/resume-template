@@ -76,7 +76,8 @@ blockquote {
 }
 
 .blog-header-text {
-  margin: 0.67em 0;
+  margin: 0 0;
+  padding: 0.67em 0;
   font-weight: 600;
   @include sans;
   position: relative;
