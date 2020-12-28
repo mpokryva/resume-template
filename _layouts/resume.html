@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% assign primary-color = '#406098' %}
+{% assign secondary-color = '#B7E5FF' %}
 
 <section id="top">
   <div id="header-container">
@@ -22,7 +23,7 @@ layout: default
           <p> {{ site.data.header.blurb }}</p>
         </div>
       </div>
-      {% include slant.html fill=primary-color %}
+      {% include slant.html fill='white' %}
       <div id="image-container" class="no-print">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player id="lottie-animation" src="images/growth-1.json" background="transparent" speed="1"
@@ -57,7 +58,7 @@ layout: default
 
   <!-- You can turn off the avatar in _config.yml by setting to false -->
   {% if site.resume_avatar == 'true' %}
-  <figure class="no-print no-mobile">
+  <figure class="wrapper no-print no-mobile">
     <img src="images/avatar.png" id="avatar" alt="my photo" itemprop="image">
     <figcaption>{{ site.data.avatar.caption }}</figcaption>
   </figure>
@@ -83,10 +84,11 @@ layout: default
   </section>
   <!-- end Experience -->
   {% endif %}
+  {% include slant.html fill=secondary-color %}
 </div>
 
 
-<div id="projects">
+<div class="theme-secondary">
   {% if site.resume_section_projects %}
   <!-- begin Projects -->
   <section class="content-section page-break-before">
@@ -108,6 +110,7 @@ layout: default
   </section>
   <!-- end Projects -->
   {% endif %}
+  {% include slant.html fill='white' %}
 </div>
 
 

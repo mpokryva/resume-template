@@ -62,23 +62,24 @@
 	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 2;
-	height: 15vh;
+	height: 15vw;
 	margin-bottom: -1px;
 	/* set height to pixels if you want angle to change with screen width */
 }
 
 .spacer-svg {
-	position: absolute;
-	bottom: 0;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 2;
 	width: 100%;
-	height: 0vw;
-	margin-bottom: -1px;
+	height: 2vw;
 }
 
 .gradient-header {
 	display: grid;
-	grid-template-columns: 45% 55%;
-	grid-template-rows: 5fr auto;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto;
 	overflow: hidden;
 	position: relative;
 	background-color: $secondary;
@@ -92,7 +93,7 @@
 	#header-content {
 		margin-top: 10vh;
 		margin-left: 10vw;
-		margin-bottom: 20vw;
+		margin-bottom: 10vw;
 	}
 	.header-bold-text {
 		@include sans;
@@ -389,11 +390,21 @@ figure {
 }
 
 #photo-and-experience {
-	background: $primary;
-	color: whitesmoke;
+	background: white;
+	// color: whitesmoke;
 }
 
 #projects {
 	background: $secondary;
-	color: whitesmoke;
+}
+
+.theme-white {
+	background: white;
+}
+
+.theme-secondary {
+	background: $secondary;
+	.section-header {
+		color: #0084cf;
+	}
 }
