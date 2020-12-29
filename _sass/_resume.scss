@@ -47,18 +47,15 @@
 .triangle-svg {
 	grid-column-start: 1;
 	grid-column-end: 3;
-	grid-row-start: 2;
-	grid-row-end: 2;
+	grid-row: 2;
 	height: 15vw;
-	margin-bottom: -1px;
 	/* set height to pixels if you want angle to change with screen width */
 }
 
 .spacer-svg {
-	grid-column-start: 3;
-	grid-column-end: 4;
-	grid-row-start: 2;
-	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 3;
 	width: 100%;
 	height: 2vw;
 }
@@ -163,7 +160,7 @@
 			grid-row-start: 4;
 			grid-row-end: 4;
 			width: 100%;
-			height: 2vw;
+			height: 2vh;
 		}
 	}
 	#image-container {
@@ -250,7 +247,6 @@ figure {
 // resume content styles
 .content-section {
 	@extend .wrapper;
-	// margin: 0 0 3rem;
 	.resume-item {
 		margin-bottom: 2rem;
 	}
@@ -407,4 +403,10 @@ figure {
 	a:visited {
 		color: $accent;
 	}
+}
+
+.r3-c1-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
 }

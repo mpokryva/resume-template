@@ -48,22 +48,22 @@ layout: default
 {% endif %}
 
 
-<div id="photo-and-experience">
+<div id="photo-and-experience" class="r3-c1-grid">
   <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}" />
   <meta itemprop="address" content="{{ site.resume_contact_address }}" />
 
-  <!-- You can turn off the avatar in _config.yml by setting to false -->
-  {% if site.resume_avatar == 'true' %}
-  <figure class="wrapper no-print no-mobile">
-    <img src="images/avatar.png" id="avatar" alt="my photo" itemprop="image">
-    <figcaption>{{ site.data.avatar.caption }}</figcaption>
-  </figure>
-  {% endif %}
 
   {% if site.resume_section_experience %}
-  <!-- begin Experience -->
   <section class="content-section">
+    <!-- You can turn off the avatar in _config.yml by setting to false -->
+    {% if site.resume_avatar == 'true' %}
+    <figure class="wrapper no-print no-mobile">
+      <img src="images/avatar.png" id="avatar" alt="my photo" itemprop="image">
+      <figcaption>{{ site.data.avatar.caption }}</figcaption>
+    </figure>
+    {% endif %}
 
+    <!-- begin Experience -->
     <header class="section-header">
       <h2>Experience</h2>
     </header>
@@ -84,7 +84,7 @@ layout: default
 </div>
 
 
-<div class="theme-secondary">
+<div class="theme-secondary r3-c1-grid">
   {% if site.resume_section_projects %}
   <!-- begin Projects -->
   <section class="content-section page-break-before">
