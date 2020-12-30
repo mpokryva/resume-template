@@ -3,7 +3,22 @@ layout: default
 ---
 <header class="post-header theme-light blog-header">
   <div class="wrapper">
-    <h1 class="post-title p-name blog-header-text" itemprop="name headline">{{ page.title | escape }}</h1>
+    <nav class="padding-0 navbar navbar-expand-lg navbar-light">
+      <div>
+        <h1 id="blog-welcome" class="blog-header-text" itemprop="name headline">{{ page.title | escape }}</h1>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a id="home-link" class="navbar-link" href="/blog">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </header>
 <div class="wrapper">
