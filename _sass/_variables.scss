@@ -2,24 +2,25 @@
 // ---------------------------------------/
 
 $container-width: 980px !default;
-$grid-gutter:     10px !default;
+$grid-gutter: 10px !default;
 
 // Colors
-$white:             #fff;
-$black:             #202124;
-$primary:              #406098;
-$secondary:        #B7E5FF;
+$white: #fff;
+$black: #202124;
+$primary: #406098;
+$secondary: #b7e5ff;
 $accent: #fd576c;
-$grey-color:       #828282 !default;
+$grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
-
+$grey-color-dark: darken($grey-color, 25%) !default;
+$blue-color-link: #0084cf;
 
 // Styles
-$text_color:        $black;
+$text_color: $black;
 
 // Font stack
-$body-font: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$body-font: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji",
+    "Segoe UI Symbol" !default;
 
 // The base body size
 $body-font-size: 13px !default;

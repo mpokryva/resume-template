@@ -292,7 +292,122 @@ figure {
 	display: none !important;
 }
 
+.theme-dark {
+	$test: #4cd5ff;
+	background: $primary;
+	color: #ccd4db;
+	.section-header {
+		color: $test;
+	}
+	a:link {
+		color: $test;
+	}
+	a:visited {
+		color: $test;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	strong,
+	b {
+		font-weight: bold;
+		color: #fff;
+	}
+}
+
+#photo-and-experience {
+	background: white;
+	// color: whitesmoke;
+}
+
+#projects {
+	background: $secondary;
+}
+
+.theme-white {
+	background: white;
+	color: black;
+	a:link {
+		color: $blue-color-link;
+	}
+	a:visited {
+		color: $blue-color-link;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	strong,
+	b {
+		font-weight: bold;
+		color: $primary;
+	}
+}
+
+.theme-light {
+	background: $secondary;
+	color: rgb(92, 92, 92);
+	.section-header {
+		color: #86a0cc;
+		color: #759cdd;
+	}
+	a:link {
+		color: $accent;
+	}
+	a:visited {
+		color: $accent;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	strong,
+	b {
+		font-weight: bold;
+		color: $primary;
+	}
+}
+
+.r3-c1-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+}
+
+.p-top-5 {
+	padding-top: 5vh;
+}
+
 @media print {
+	.p-top-5 {
+		padding-top: 0vh;
+	}
+	.theme-dark {
+		background: white;
+		color: black;
+		.section-header {
+			@include section_border_thin;
+		}
+		a:link {
+			color: $blue-color-link;
+		}
+		a:visited {
+			color: $blue-color-link;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		strong,
+		b {
+			font-weight: bold;
+			color: $primary;
+		}
+	}
+	#resume-header {
+		padding-top: 0in;
+	}
 	.wrapper {
 		max-width: none;
 		padding: 0;
@@ -318,12 +433,10 @@ figure {
 		text-shadow: none !important;
 	}
 	@page {
-		margin: 0;
-		margin-top: 0.5in;
+		margin: 1in;
 		margin-bottom: 0.5in;
 	}
 	body {
-		margin: 1in;
 		font-size: 12px !important;
 		line-height: 1rem !important;
 	}
@@ -348,11 +461,6 @@ figure {
 		font-size: 0.75rem !important;
 		line-height: 1.25rem !important;
 		margin: 0 auto 0 auto !important;
-	}
-	.interest {
-		page-break-inside: always;
-		margin: 8px;
-		display: inline-block;
 	}
 	.section-header {
 		@include section_border_thin;
@@ -384,76 +492,8 @@ figure {
 			}
 		}
 	}
-}
-
-#photo-and-experience {
-	background: white;
-	// color: whitesmoke;
-}
-
-#projects {
-	background: $secondary;
-}
-
-.theme-white {
-	background: white;
-}
-
-.theme-light {
-	background: $secondary;
-	color: rgb(92, 92, 92);
-	.section-header {
-		color: #86a0cc;
-		color: #759cdd;
+	// Override bootstrap.
+	a:not(.btn) {
+		text-decoration: none;
 	}
-	a:link {
-		color: $accent;
-	}
-	a:visited {
-		color: $accent;
-	}
-	h1,
-	h2,
-	h3,
-	h4,
-	strong,
-	b {
-		font-weight: bold;
-		color: $primary;
-	}
-}
-
-.theme-dark {
-	$test: #51c0ff;
-	$test: #4cd5ff;
-	background: $primary;
-	color: #ccd4db;
-	.section-header {
-		color: $test;
-	}
-	a:link {
-		color: $test;
-	}
-	a:visited {
-		color: $test;
-	}
-	h1,
-	h2,
-	h3,
-	h4,
-	strong,
-	b {
-		font-weight: bold;
-		color: #fff;
-	}
-}
-
-.r3-c1-grid {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto auto;
-}
-
-.p-top-5 {
-	padding-top: 5vh;
 }
