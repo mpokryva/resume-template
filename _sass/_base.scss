@@ -7,11 +7,6 @@
   list-style-position: inside;
 }
 
-li {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 main {
   max-width: 100vw;
 }
@@ -129,5 +124,5 @@ body {
 
 // Override bootstrap navbar padding.
 .navbar-toggler {
-	padding: 1px 6px;
+  padding: 1px 6px;
 }

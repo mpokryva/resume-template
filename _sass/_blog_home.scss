@@ -86,10 +86,10 @@ blockquote {
 
 #home-link {
   @include sans;
-  float: right;
   color: $primary;
   font-size: 1.5em;
   line-height: 1.5;
+  font-weight: 600;
 }
 
 @keyframes contract {
