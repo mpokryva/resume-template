@@ -77,17 +77,11 @@ blockquote {
 }
 
 .blog-header-text {
-  margin: 0 0;
-  padding: 0.67em 0;
   font-weight: 600;
   @include sans;
   position: relative;
   letter-spacing: -0.15rem;
   line-height: 1;
-}
-
-#blog-welcome {
-  float: left;
 }
 
 #home-link {
@@ -110,12 +104,6 @@ blockquote {
   }
   to {
     opacity: 1;
-  }
-}
-
-@include media_mobile {
-  #blog-welcome {
-    text-align: center;
   }
 }
 
