@@ -65,7 +65,7 @@
 
 .gradient-header {
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 55% auto;
 	grid-template-rows: auto auto auto;
 	overflow: hidden;
 	position: relative;
@@ -75,6 +75,7 @@
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 	#header-content {
 		margin-left: 10vw;
+		margin-right: 10vw;
 	}
 	.header-bold-text {
 		@include sans;
@@ -97,8 +98,8 @@
 
 #top {
 	#lottie-animation {
-		display: inline-block;
 		margin-top: 3vw;
+		padding-right: 5vw;
 	}
 	.header-contact-info {
 		@include sans;
@@ -132,6 +133,9 @@
 			font-size: 1.125rem;
 		}
 	}
+	#resume-header-slant {
+		margin-top: -10vw;
+	}
 }
 
 @include media_mobile {
@@ -145,7 +149,7 @@
 			font-size: 1.25rem;
 		}
 		#header-content {
-			margin-right: 10vw;
+			margin-bottom: 10vw;
 		}
 		.triangle-svg {
 			grid-column-start: 1;
@@ -319,7 +323,7 @@ figure {
 		margin-bottom: 0.5in;
 	}
 	body {
-		margin: 0 1in 0 5in;
+		margin: 1in;
 		font-size: 12px !important;
 		line-height: 1rem !important;
 	}
@@ -399,7 +403,8 @@ figure {
 	background: $secondary;
 	color: rgb(92, 92, 92);
 	.section-header {
-		color: white	;
+		color: #86a0cc;
+		color: #759cdd;
 	}
 	a:link {
 		color: $accent;
@@ -418,8 +423,9 @@ figure {
 	}
 }
 
-.theme-secondary {
+.theme-dark {
 	$test: #51c0ff;
+	$test: #4cd5ff;
 	background: $primary;
 	color: #ccd4db;
 	.section-header {
@@ -448,6 +454,6 @@ figure {
 	grid-template-rows: auto auto auto;
 }
 
-.pt-5 {
+.p-top-5 {
 	padding-top: 5vh;
 }

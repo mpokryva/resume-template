@@ -6,7 +6,7 @@ layout: default
 {% assign secondary-color = '#B7E5FF' %}
 
 <section id="top">
-  <div id="resume-header" class="theme-light gradient-header pt-5">
+  <div id="resume-header" class="theme-light gradient-header p-top-5">
     <div id="header-content">
       <h1 class="header-bold-text no-print" itemprop="name">
         Hi, I'm {{ site.resume_name }}
@@ -25,7 +25,10 @@ layout: default
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <lottie-player id="lottie-animation" class="no-print" src="images/growth-1.json" background="transparent" speed="1"
       id="header-image-1" loop autoplay></lottie-player>
-    {% include slant.html fill='white' %}
+    <svg id="resume-header-slant" class="triangle-svg no-print" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 100 100"
+      preserveAspectRatio="none">
+      <polygon fill="white" points="0,100 100,100 100,0" />
+    </svg>
   </div>
 
   {% if site.resume_include_title == 'yes' %}
@@ -48,7 +51,7 @@ layout: default
 {% endif %}
 
 
-<div id="photo-and-experience" class="r3-c1-grid pt-5">
+<div id="photo-and-experience" class="r3-c1-grid p-top-5">
   <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}" />
   <meta itemprop="address" content="{{ site.resume_contact_address }}" />
 
@@ -80,11 +83,11 @@ layout: default
   </section>
   <!-- end Experience -->
   {% endif %}
-  {% include slant.html fill=secondary-color %}
+  {% include slant.html fill=primary-color %}
 </div>
 
 
-<div class="theme-light r3-c1-grid pt-5">
+<div class="theme-dark r3-c1-grid p-top-5">
   {% if site.resume_section_projects %}
   <!-- begin Projects -->
   <section class="content-section page-break-before">
@@ -112,7 +115,7 @@ layout: default
 
 {% if site.resume_section_skills %}
 <!-- begin Skills -->
-<section class="content-section pt-5">
+<section class="content-section p-top-5">
 
   <header class="section-header">
     <h2>Skills</h2>

@@ -24,11 +24,12 @@ code {
 
 code {
   padding: 1px 5px;
+  word-wrap: normal;
 }
 
 pre {
   padding: 8px 12px;
-  overflow-x: auto;
+  overflow-x: visible;
 
   > code {
     border: 0;
@@ -92,7 +93,7 @@ blockquote {
 #home-link {
   @include sans;
   float: right;
-  color: white;
+  color: $primary;
   font-size: 1.5em;
   line-height: 1.5;
 }
