@@ -21,8 +21,6 @@ date: 2019-03-10 20:11:14 -0500
 3. PID control
 4. Integration of parts 2 and 3 to implement motion control
 
-## Let's start!
-
 ## 1. Assembly
 I purchased my parts according to a simple [Raspberry Pi robot kit](https://learn.adafruit.com/simple-raspberry-pi-robot/overview) on Adafruit, and followed the assembly instructions of this guide. Additionally, you should purchase a [Pi camera](https://www.adafruit.com/product/3099). Including the camera and the Pi, everything in the kit costs around $150. If this seems like an unreasonable price, consider that the Raspberry Pi, camera, chassis, motors, etc., are all extremely versatile, and need not (and should not!) be used for just this project. Consider this to be an investment.
 

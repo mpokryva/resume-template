@@ -173,7 +173,6 @@
 	#resume-header {
 		margin-bottom: 15vw !important;
 	}
-
 }
 
 figcaption {
@@ -253,6 +252,9 @@ figure {
 .content-section {
 	@extend .wrapper;
 	.resume-item {
+		ul {
+			list-style: none;
+		}
 		margin-bottom: 2rem;
 	}
 	.resume-item-title {
