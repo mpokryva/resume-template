@@ -311,14 +311,8 @@ figure {
 	h4,
 	strong,
 	b {
-		font-weight: bold;
-		color: #fff;
+		color: white;
 	}
-}
-
-#photo-and-experience {
-	background: white;
-	// color: whitesmoke;
 }
 
 #projects {
@@ -340,7 +334,7 @@ figure {
 	h4,
 	strong,
 	b {
-		font-weight: bold;
+		font-weight: 900;
 		color: $primary;
 	}
 }
@@ -364,7 +358,7 @@ figure {
 	h4,
 	strong,
 	b {
-		font-weight: bold;
+		font-weight: 900;
 		color: $primary;
 	}
 }
@@ -438,7 +432,6 @@ figure {
 	}
 	body {
 		font-size: 12px !important;
-		line-height: 1rem !important;
 	}
 	#top {
 		padding-bottom: 0 !important;
