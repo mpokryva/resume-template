@@ -25,10 +25,7 @@ layout: default
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <lottie-player id="lottie-animation" class="no-print" src="images/growth-1.json" background="transparent" speed="1"
       id="header-image-1" loop autoplay></lottie-player>
-    <svg id="resume-header-slant" class="triangle-svg no-print" xmlns="http://www.w3.org/2000/svg" width="100%"
-      viewBox="0 0 100 100" preserveAspectRatio="none">
-      <polygon fill="white" points="0,100 100,100 100,0" />
-    </svg>
+    {% include slant.html fill='white' %}
   </div>
 
   {% if site.resume_include_title == 'yes' %}

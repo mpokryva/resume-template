@@ -98,7 +98,7 @@
 
 #top {
 	#lottie-animation {
-		margin-top: 3vw;
+		padding-top: 5vw;
 		padding-right: 5vw;
 	}
 	.header-contact-info {
@@ -132,9 +132,6 @@
 		@include media_larger_than_mobile {
 			font-size: 1.125rem;
 		}
-	}
-	#resume-header-slant {
-		margin-top: -10vw;
 	}
 }
 
@@ -176,6 +173,7 @@
 	#resume-header {
 		margin-bottom: 15vw !important;
 	}
+
 }
 
 figcaption {
@@ -293,17 +291,17 @@ figure {
 }
 
 .theme-dark {
-	$test: #4cd5ff;
+	$accent-color: #4cd5ff;
 	background: $primary;
-	color: #ccd4db;
+	color: #dee4e9;
 	.section-header {
-		color: $test;
+		color: $accent-color;
 	}
 	a:link {
-		color: $test;
+		color: $accent-color;
 	}
 	a:visited {
-		color: $test;
+		color: $accent-color;
 	}
 	h1,
 	h2,
