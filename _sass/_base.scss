@@ -126,3 +126,8 @@ body {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+// Override bootstrap navbar padding.
+.navbar-toggler {
+	padding: 1px 6px;
+}
