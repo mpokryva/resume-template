@@ -1,5 +1,6 @@
 ---
 ---
+
 // "Reset" styles and SCSS reusable components
 @import "normalize";
 @import "mixins";
@@ -11,3 +12,10 @@
 
 // Layouts
 @import "resume";
+@import "blog_home";
+
+// Code styling
+@import "dracula";
+
+// YouTube video styling
+@import "youtube_video";

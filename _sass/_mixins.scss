@@ -33,30 +33,33 @@
 // media querie tools
 
 @mixin media_max($screen_width) {
-  @media (max-width: $screen_width) { @content; }
+  @media (max-width: $screen_width) {
+    @content;
+  }
 }
 
 @mixin media_min($screen_width) {
-  @media (min-width: $screen_width) { @content; }
+  @media (min-width: $screen_width) {
+    @content;
+  }
 }
 
 @mixin media_larger_than_mobile {
-  @media (min-width: 600px) { @content; }
+  @media (min-width: 600px) {
+    @content;
+  }
 }
 
 @mixin media_mobile {
-  @media (max-width: 600px) { @content; }
+  @media (max-width: 600px) {
+    @content;
+  }
 }
 
 // type utilities
 
-@font-face {
-    font-family:  'Mulish', sans-serif;
-}
-
-
 @mixin sans {
-  font-family:  "Mulish", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Mulish", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin sans_light {
@@ -98,13 +101,13 @@
 @mixin section_border {
   border-top: 3px solid;
   border-bottom: 3px solid;
-  padding: .2rem 0 .4rem;
+  padding: 0.2rem 0 0.4rem;
   color: #c7c7c7;
 }
 
 @mixin section_border_thin {
   border-top: 1px solid;
   border-bottom: 1px solid;
-  padding: .2rem 0 .2rem;
+  padding: 0.2rem 0 0.2rem;
   color: #c7c7c7;
 }

@@ -8,7 +8,8 @@ description: "Backend Software Engineer"
 # Build settings
 markdown: kramdown
 sass:
-  sass_dir: _sass
+  load_paths:
+    - _sass
   style: compressed
 
 # Resume settings
@@ -55,3 +56,5 @@ resume_theme:                   default
 # to _config.yml are only recognized when the server starts
 plugins:
   - "jekyll-github-metadata"
+
+theme: minima

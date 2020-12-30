@@ -4,6 +4,16 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  list-style-position: inside;
+}
+
+li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 100vw;
 }
 
 a {
@@ -12,11 +22,11 @@ a {
 }
 
 a:link {
-  color: #0084cf;
+  color: $blue-color-link;
 }
 
 a:visited {
-  color: #0084cf;
+  color: $blue-color-link;
 }
 
 a:hover {
@@ -28,29 +38,31 @@ a:hover {
   text-decoration: none;
 }
 
-h2, h3, h4, strong, b {
-  //color: #7500ff;
-  //color: #00b7f9;
+h1,
+h2,
+h3,
+h4,
+strong,
+b {
+  font-weight: bold;
   color: $primary;
-  //  color: #16a085;
+}
+
+p {
+  margin-top: 1rem;
 }
 
 html {
   background: $white;
 }
 
-body{
+body {
   @include sans;
   color: $text_color;
-  font-size: 1em;
-  line-height: 1.5;
 }
 
-.wrapper:before,
-.wrapper:after { content:""; display:table; }
-.wrapper:after { clear: both; }
 .wrapper {
-  max-width: 728px;
+  max-width: 50em;
   padding: 0 24px;
   margin: 0 auto;
   zoom: 1;
@@ -59,9 +71,16 @@ body{
 // clearfix (now called group,
 // via http://css-tricks.com/snippets/css/clear-fix/)
 .group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both; }
-.group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
 
 ::-moz-selection {
   background: #406098;
@@ -72,4 +91,43 @@ body{
   background: #406098;
   color: #fff;
   text-shadow: none;
+}
+html,
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+// footer styles
+.page-footer {
+  align-self: end;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  .footer-line {
+    margin: 0;
+    font-size: 0.75em;
+    color: #999;
+  }
+}
+
+.footer-border {
+  padding-top: 0.5rem;
+  border-top: 4px solid #c7c7c7;
+}
+
+.padding-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+// Override bootstrap navbar padding.
+.navbar-toggler {
+	padding: 1px 6px;
 }
