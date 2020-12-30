@@ -27,6 +27,7 @@
 
 #resume-header {
 	padding-top: 10vh;
+	color: $primary;
 }
 
 // page header styles
@@ -318,7 +319,7 @@ figure {
 		margin-bottom: 0.5in;
 	}
 	body {
-		margin: 0 0.5in 0 0.5in;
+		margin: 0 1in 0 5in;
 		font-size: 12px !important;
 		line-height: 1rem !important;
 	}
@@ -392,6 +393,29 @@ figure {
 
 .theme-white {
 	background: white;
+}
+
+.theme-light {
+	background: $secondary;
+	color: rgb(92, 92, 92);
+	.section-header {
+		color: white	;
+	}
+	a:link {
+		color: $accent;
+	}
+	a:visited {
+		color: $accent;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	strong,
+	b {
+		font-weight: bold;
+		color: $primary;
+	}
 }
 
 .theme-secondary {

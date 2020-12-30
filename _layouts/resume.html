@@ -6,7 +6,7 @@ layout: default
 {% assign secondary-color = '#B7E5FF' %}
 
 <section id="top">
-  <div id="resume-header" class="theme-secondary gradient-header pt-5">
+  <div id="resume-header" class="theme-light gradient-header pt-5">
     <div id="header-content">
       <h1 class="header-bold-text no-print" itemprop="name">
         Hi, I'm {{ site.resume_name }}
@@ -80,11 +80,11 @@ layout: default
   </section>
   <!-- end Experience -->
   {% endif %}
-  {% include slant.html fill=primary-color %}
+  {% include slant.html fill=secondary-color %}
 </div>
 
 
-<div class="theme-secondary r3-c1-grid pt-5">
+<div class="theme-light r3-c1-grid pt-5">
   {% if site.resume_section_projects %}
   <!-- begin Projects -->
   <section class="content-section page-break-before">
