@@ -4,7 +4,7 @@ title: "Raspberry Pi Line Following Robot Tutorial"
 date: 2019-03-10 20:11:14 -0500
 ---
 
-<img class="full-img" src="/images/line-robot/robot_moving.gif">
+<img class="img-fluid" src="/images/line-robot/robot_moving.gif">
 
 ## What do you get out of this project?
  1. Experience assembling and soldering and assembling Raspberry Pi robot
@@ -30,17 +30,17 @@ If you don't want to spend too much time assembling the robot, and want to get i
 
 Since Adafruit's assembly guide is for a generic, camera-less robot, we also need to attach a camera. The camera must be attached at a downwards angle, as the robot needs to capture what is immediately in front of it. One very hacky (weird?) trick I did was inserting a toothpick below the camera, and wrapping it in electrical tape until I was satisfied with the camera angle. If you care more about your robot's dignity, perhaps you can find a more elegant solution.
 
-| The finished robot | Close-up of the camera fixture | 
-| :----------------: |:----------------------------:  |
-| <img class="full-img" src="/images/line-robot/robot_closeup.png"> | <img class="full-img" src="/images/line-robot/camera_closeup.png"> |
+|                         The finished robot                         |                   Close-up of the camera fixture                    |
+| :----------------------------------------------------------------: | :-----------------------------------------------------------------: |
+| <img class="img-fluid" src="/images/line-robot/robot_closeup.png"> | <img class="img-fluid" src="/images/line-robot/camera_closeup.png"> |
 
 ## 2. OpenCV image processing
 
 After we've assembled our robot, the next step in the process is to determine the robot's error at each frame, so we'll know how much to adjust. But, even before we do that, we should determine what error we're looking for. Simply put, **the error of the robot is its horizontal (x) distance from the center of the line.** If the robot is turned excessively to the left, for instance, the image it captures will show that it's off-center to the left. The challenge is in parsing out only the line in the image, and determining its center.
 
 
-| <img src="/images/line-robot/error_diagram.png" class="full-img center"> | 
-|:--:| 
+|                                    <img src="/images/line-robot/error_diagram.png" class="img-fluid center">                                    |
+| :---------------------------------------------------------------------------------------------------------------------------------------------: |
 | Example: The robot is facing to the left, so the error we're trying to calculate is represented by the red line. <br> (Not to scale, obviously) |
 
 
@@ -119,9 +119,9 @@ The **I** stands for **integral**. This term is simply the sum of *n* previous e
 
 The **D** stands for **derivative**. This term is simply equal to ```(current_error - last_error)```. It accounts for future events, like an upcoming turn. If we see that our error has rapidly increased, as will be observed in a turn, the D term will apply some extra correction to avoid the robot veering off path due to momentum.
 
-|            P             |                       I                   |                          D                            | 
+|            P             |                     I                     |                           D                           |
 | :----------------------: | :---------------------------------------: | :---------------------------------------------------: |
-|        Proportional      |                   Integral                |                     Derivative                        |
+|       Proportional       |                 Integral                  |                      Derivative                       |
 | Proportional correction. | Corrects based on sum of last *n* errors. | Corrects based on ```(current_error - last_error)```. |
 
 ### What are PID *gains*?

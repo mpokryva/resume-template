@@ -31,7 +31,7 @@ child.stdout.on('data', (data) => {
 
 Strangely, all I saw was the default k6 splash screen, which is printed to stdout every time the program starts.
 
-<img class="full-img" src="/images/pipe-capacity/k6-splash.png">
+<img class="img-fluid" src="/images/pipe-capacity/k6-splash.png">
 
 This was surprising, because I was calling `console.log` several times throughout my k6 script, but none of that output was showing up in stdout when k6 was run as a Node subprocess.
 
