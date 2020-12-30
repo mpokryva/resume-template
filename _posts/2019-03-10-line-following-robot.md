@@ -4,7 +4,7 @@ title: "Raspberry Pi Line Following Robot Tutorial"
 date: 2019-03-10 20:11:14 -0500
 ---
 
-<img class="img-fluid" src="/images/line-robot/robot_moving.gif">
+<img class="img-fluid w-100" src="/images/line-robot/robot_moving.gif">
 
 ## What do you get out of this project?
  1. Experience assembling and soldering and assembling Raspberry Pi robot
