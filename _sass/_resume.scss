@@ -415,9 +415,10 @@ figure {
 		}
 	}
 	#header-content {
-		margin: 0 auto 0 auto !important;
 		.header-bold-text {
-			margin-top: 0 !important;
+			margin: 0 auto 0 auto !important;
+			font-size: 2rem !important;
+			font-weight: bold;
 		}
 	}
 	.gradient-header {
@@ -427,8 +428,7 @@ figure {
 		text-shadow: none !important;
 	}
 	@page {
-		margin: 1in;
-		margin-bottom: 0.5in;
+		margin: 0.5in 1in;
 	}
 	body {
 		font-size: 12px !important;
@@ -446,14 +446,11 @@ figure {
 		font-size: 12px;
 		line-height: 1rem;
 	}
-	.header-bold-text {
-		margin: 0 auto 0 auto !important;
-		font-size: 2rem !important;
-	}
 	#blurb {
-		font-size: 0.75rem !important;
-		line-height: 1.25rem !important;
-		margin: 0 auto 0 auto !important;
+		p {
+			font-size: 18px !important;
+			line-height: 18px !important;
+		}
 	}
 	.section-header {
 		@include section_border_thin;
