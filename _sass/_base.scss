@@ -53,6 +53,7 @@ html {
 body {
   @include sans;
   color: $text_color;
+  line-height: 1.6;
 }
 
 .wrapper {
