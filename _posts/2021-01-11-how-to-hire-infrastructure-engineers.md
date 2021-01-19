@@ -62,9 +62,9 @@ Bonus personal [example](https://www.usenix.org/legacy/event/lisa07/tech/full_pa
 ### Humility
 Designing distributed systems and interfaces is challenging and often involves a lot of mistakes. It’s important to look for people that understand this, and there are a few specifics to look for:
 
-- Engineers that think in a “failure-first” mindset. Rather than designing the “perfect system,” it’s important to assume failure will happen (and more often, as you scale) and apply some stability patterns like load balancing, redundancy, timeouts, retries, and circuit breakers.
-- Engineers that are willing to change their minds during the system design interview if you suggest better solutions.
-- In terms of interface design, engineers should design APIs that are coherent and easy to understand, but also easy to evolve in case mistakes are made or product requirements change.
+- **Engineers that think in a “failure-first” mindset.** Rather than designing the “perfect system,” it’s important to assume failure will happen (and more often, as you scale) and apply some stability patterns like load balancing, redundancy, timeouts, retries, and circuit breakers.
+- **Engineers that are willing to change their minds** during the system design interview if you suggest better solutions.
+- **Engineers that design coherent, intuitive, and evolvable APIs.**
 
 ### Track record of “above and beyond” achievements at past jobs/projects/etc
 
@@ -81,8 +81,13 @@ Note that the answer to the above question doesn't have to be clear cut. Maybe y
 
 # Red flags to look for
 
-1. **Jumping to solutions too quickly.** Distributed systems are big and complex, and making a lot of mistakes needlessly is expensive.
-2. **Not jumping to solutions quickly enough.** Distributed systems are big and complex, and you will make mistakes along the way, so at some point, decisions have to be made.
+**Jumping to solutions too quickly.** Distributed systems are big and complex, and making a lot of mistakes needlessly is expensive.
+
+**Not jumping to solutions quickly enough.** Distributed systems are big and complex, and you will make mistakes along the way, so at some point, decisions have to be made.
 Obviously, these last two points are a bit tongue-in-cheek, but this is an extremely important balance to look for in an infra engineer.
-3. **“Ivory-tower architects.”** This is a reference from the book Release It! by Michael Nygard (highly recommend). Ivory-tower architects are engineers that try to create (and impose on others) all-encompassing abstractions and standards that are impossibly painful to use in practice. Architecture Astronauts is a similar term for this type of engineer. I find that they’re more common among infrastructure engineers, and so that’s why I’m including this point. This is especially common among API designers who design interfaces for a living, and often want to design the “master interface” to take care of everything. I’ve experienced this firsthand multiple times (and I’ve done it myself!), and it ain’t fun:(
-   - A red flag for this is when candidates use a lot of buzzwords and talk about “best practices” with no mention of their downsides or alternatives when suggesting solutions to design problems.
+
+**"Ivory-tower architects" or [Architecture Astronauts.](https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/)** The first term is a reference from the book [Release It!](https://www.amazon.com/Release-Production-Ready-Software-Pragmatic-Programmers/dp/0978739213) by Michael Nygard (which I highly recommend) which describes a type of engineer that creates ideals not rooted in reality, and then forces those ideals upon all other engineers at their company. The second describes a type of engineer that finds patterns in problems (as all good engineers should), but then over-generalizes these patterns into useless abstractions. While these terms aren't synonymous, they similarly describe a type of engineer that often works too slowly, over-engineers solutions, and has very strong opinions about things that ultimately don't matter too much.
+
+I find that these engineers are more common among infrastructure engineers and API designers, whose work is often highly technical, hard to reverse, and stays around for a long time, so there's more potential for over-engineering. I’ve experienced this firsthand multiple times (and I’ve done it myself!), and it ain’t fun:(
+
+A red flag for this is when candidates use a lot of buzzwords and talk about “best practices” with no mention of their downsides or alternatives when suggesting solutions to design problems.

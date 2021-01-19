@@ -42,6 +42,10 @@ b {
   color: $primary;
 }
 
+body strong {
+  color: $black;
+}
+
 h3 {
   font-size: 1.5rem;
 }
@@ -129,4 +133,9 @@ body {
 // Override bootstrap navbar padding.
 .navbar-toggler {
   padding: 1px 6px;
+}
+
+li {
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
