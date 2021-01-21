@@ -58,21 +58,6 @@ blockquote {
   display: block;
 }
 
-.animation-contract {
-  //animation-name: contract;
-  //animation-duration: 1.5s;
-  // animation-fill-mode: forwards;
-  transform: scale(1);
-  margin-bottom: 15vw;
-}
-
-.animation-fadein {
-  animation: fadein 3s;
-  opacity: 0;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-}
-
 .blog-header-text {
   font-weight: 600;
   @include sans;
@@ -89,19 +74,8 @@ blockquote {
   font-weight: 600;
 }
 
-@keyframes contract {
-  to {
-    margin-bottom: 15vw;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+#home-link:hover {
+  text-decoration: underline;
 }
 
 .post-list-heading {
@@ -114,4 +88,27 @@ blockquote {
 
 table {
   margin: 1rem 0;
+}
+
+.post-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 1.5em;
+}
+
+.post-content {
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    color: $black;
+    font-size: 1.25rem;
+  }
 }

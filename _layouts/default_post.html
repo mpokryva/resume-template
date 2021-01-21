@@ -4,7 +4,7 @@ layout: default
 <header class="post-header theme-light blog-header">
   <div class="wrapper">
     <nav class="padding-0 navbar navbar-expand-lg navbar-light">
-      <h1 class="blog-header-text" itemprop="name headline">{{ page.title | escape }}</h1>
+      <h1 class="blog-header-text" itemprop="name headline">Welcome to my blog!</h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -18,6 +18,7 @@ layout: default
   </div>
 </header>
 <div class="wrapper">
+  <h1 class="post-title">{{ page.title | escape }}</h1>
   <p class="post-meta">
     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
