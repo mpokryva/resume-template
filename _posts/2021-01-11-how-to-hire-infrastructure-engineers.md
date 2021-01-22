@@ -6,17 +6,25 @@ date: 2021-01-10 20:11:14 -0500
 
 ***Disclaimer:*** Please keep in mind that much of the advice I present in this article can and should be adjusted depending on all sorts of factors like your level of experience (and the candidate's), needs of the company, and the inherent uniqueness of people that interviews can't capture.
 
-I'm also aware that there are [plenty of companies](https://github.com/poteto/hiring-without-whiteboards) that don't do algorithm/data structures (DS) style interviews, and have processes similar to what I describe here. I figured it might still be an interesting read for some people, and also I'm bored in quarantine and wanted to get back into writing. 😎
+Infrastructure engineers design distributed systems and need to be great systems thinkers, coders, communicators, and pragmatists. I think the standard LeetCode interview process is inefficient in testing these qualities.
 
-## On traditional interviews
-
-Infrastructure engineers design distributed systems and need to be great systems thinkers, coders, communicators, and pragmatists. I think the standard algorithm/data structures (DS) interview process is inefficient in testing these qualities.
-
-From my experience, it’s not too hard to get a general feel for intelligence by just talking to a person (in addition to doing a bunch of other interviews), so you’ll get a higher signal-noise ratio from having an infra-specific interview process, rather than doing algorithm/DS interviews. That being said, companies often have wildly different needs for positions that sound similar, so adjust as needed.
+From my experience, it’s not too hard to get a general feel for intelligence by just talking to a person (in addition to doing a bunch of other interviews), so you’ll get a higher signal-noise ratio from having an infra-specific interview process, rather than doing standard algorithm interviews. That being said, companies often have wildly different needs for positions that sound similar, so adjust as needed.
 
 Below, I’ll make a case for what qualities you should look (and watch out) for in engineers, and how you can assess these qualities in an interview process consisting of a system design component and a non-LeetCode coding challenge.
 
-*Note*: I had a “hybrid” interview once that I liked, where I was asked to implement a simple algorithm and talk about optimizing and scaling it in the real world, similar to a system design interview. I won't go into that here.
+## On talent and traditional interviews
+
+Before you read any further, it's important that I explain why I don't like the traditional interview process.
+
+Excluding positions that truly use meaningfully advanced algorithms and data structures, LeetCode-style interviews are basically a proxy for IQ. There's one (possibly two) problems with this.
+
+The first (possible) problem is that you need to believe that IQ is an effective, holistic measure for intelligence. There's a good amount of research that supports this (**note to Miki: find links**), but nonetheless, this is a controversial topic.
+
+The second, more definite problem is that LeetCode questions are a *really* rough proxy for IQ. Actual IQ tests provide a quantitative result, but LeetCode questions provide only as much resolution as the evaluation rubric you create. Since LeetCode questions rarely map to actual job requirements, it's hard to create a sensible rubric.
+
+It's also hard to assess what level of talent you're looking for, since you're bound to lean towards thinking that you need to hire a super talented engineer, to bolster your own ego.
+
+In the case where you're sure you need an absolutely brilliant engineer and you're willing to reject *a lot* of people, [this](https://www.spakhm.com/p/how-to-interview-engineers) interview process *might* be a good fit. It's [highly controversial](https://news.ycombinator.com/item?id=24754748), you've been warned.
 
 ## What to look for
 
