@@ -28,8 +28,6 @@ In the case where you're sure you need an absolutely brilliant engineer and you'
 
 ## What to look for
 
-There are a few things that one should look for in an infrastructure engineer. System design knowledge is critical, because you don't want to hire someone that makes mistake after mistake in this area.
-
 ### System design knowledge
 
 I think system design interviews are actually pretty good at testing this. A well-conducted system design interview can test a candidate's knowledge of the fundamentals like load balancing, caching, sharding, NoSQL/SQL, OLAP/OLTP, binary protocols like gRPC, distributed tracing, etc.
