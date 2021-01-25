@@ -6,41 +6,57 @@ date: 2021-01-10 20:11:14 -0500
 
 ***Disclaimer:*** Please keep in mind that much of the advice I present in this article can and should be adjusted depending on all sorts of factors like your level of experience (and the candidate's), needs of the company, and the inherent uniqueness of people that interviews can't capture.
 
-Infrastructure engineers design distributed systems and need to be great systems thinkers, coders, communicators, and pragmatists. I think the standard LeetCode interview process is inefficient in testing these qualities.
+A little while ago, [Slava Akhmechet](https://twitter.com/spakhm?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) wrote an [article](https://www.spakhm.com/p/how-to-interview-engineers) about how to interview exceptionally talented engineers. His advice was basically "Give them a challenging LeetCode question, and if they can't solve it in under 15 minutes, it's a no hire." This advice is based on the premise that IQ is an effective measure of intelligence, which is obviously a controversial stance, but is one that's backed up by a bunch of reasearch (**Note to Miki: Link pls**). Unfortunately, the article is titled "How to Interview Engineers," so that (unintentionally, I believe) misled a bunch of people into thinking it's satire. The Hacker News [discussion](https://news.ycombinator.com/item?id=24754748) is filled with people who call it a brilliant piece of satire, which I think is pretty funny.
 
-From my experience, it’s not too hard to get a general feel for intelligence by just talking to a person (in addition to doing a bunch of other interviews), so you’ll get a higher signal-noise ratio from having an infra-specific interview process, rather than doing standard algorithm interviews. That being said, companies often have wildly different needs for positions that sound similar, so adjust as needed.
+As controversial as Slava's advice is, if I were to bet my own money on hiring *exceptional* (really, like rockstar-level) engineers, I think his method would be among the most effective. Pretty spicy take, I know.
 
-Below, I’ll make a case for what qualities you should look (and watch out) for in engineers, and how you can assess these qualities in an interview process consisting of a system design component and a non-LeetCode coding challenge.
+What a lot of people maybe missed in the article is when Slava says:
 
-## On talent and traditional interviews
+> If your startup is technology-enabled, or you're designing an interview process at a large company, or you're hiring for well-established roles to do specialized tasks, this guide isn't for you.
 
-Before you read any further, it's important that I explain why I don't like the traditional interview process.
+So, in other words, his advice isn't for 99% of companies. Now, if you're among those companies which I understand might actually be a challenging thing to identify as an insider, what do you do? The majority take Slava's advice, crank 15 minutes up to 50, add an arbitrary rubric that says "if the candidate gets up to part *n* of the question, it's a hire," and call it a day. 
 
-Excluding positions that truly use meaningfully advanced algorithms and data structures, LeetCode-style interviews are basically a proxy for IQ. There's one (possibly two) problems with this.
+The problem with this approach is that the "Slava Method" (™) is really rough proxy for IQ, but it generally works since most people would agree that if someone can destroy a LeetCode hard in 15 minutes they're probably pretty smart. If they do it a few more times then you know they aren't cheating. And if you're in the camp that says "anyone can do that if they grind enough!" then you have to ask yourself if you believe that a meaningfully large number of people are grinding LeetCode to the level where they consistently finish hards in 15 minutes. 
 
-The first (possible) problem is that you need to believe that IQ is an effective, holistic measure for intelligence. There's a good amount of research that supports this (**note to Miki: find links**), but nonetheless, this is a controversial topic.
+Anyways, once you crank up 15 minutes to 50, you introduce the question "How smart are they?" This is a really difficult question to answer, and I don't believe trying to answer it via LeetCode interviews is a productive use of time. LeetCode questions provide only as much resolution as the evaluation rubric you create and since LeetCode questions rarely map to actual job requirements, it's virtually impossible to create a sensible rubric. 
 
-The second, more definite problem is that LeetCode questions are a *really* rough proxy for IQ. Actual IQ tests provide a quantitative result, but LeetCode questions provide only as much resolution as the evaluation rubric you create. Since LeetCode questions rarely map to actual job requirements, it's hard to create a sensible rubric.
 
-It's also hard to assess what level of talent you're looking for, since you're bound to lean towards thinking that you need to hire a super talented engineer, to bolster your own ego.
+So, if you aren't in need of a crazy talented engineer, this guide's for you. Keep in mind that I have like 1.5 years of industry experience, so what do I know... Still, maybe you'll find something you like here, or even better, reading this may serve as an outlet for your anger on Hacker News. [Win-win-win](https://www.youtube.com/watch?v=Xg3dAmhFJdE). 
 
-In the case where you're sure you need an absolutely brilliant engineer and you're willing to reject *a lot* of people, [this](https://www.spakhm.com/p/how-to-interview-engineers) interview process *might* be a good fit. It's [highly controversial](https://news.ycombinator.com/item?id=24754748), you've been warned.
 
-## What to look for
 
-### System design knowledge
+Below, I’ll make a case for what qualities you should look (and watch out) for in engineers, and how you can assess those qualities in an interview process consisting of a **system design component** and a **non-LeetCode coding challenge.**
 
-I think system design interviews are actually pretty good at testing this. A well-conducted system design interview can test a candidate's knowledge of the fundamentals like load balancing, caching, sharding, NoSQL/SQL, OLAP/OLTP, binary protocols like gRPC, distributed tracing, etc.
+## The interview process
+
+### System design component
+
+**Questions you're trying to answer during this interview:**
+1. Do they know system design fundamentals?
+2. Can they peel back abstractions, or do they only know the surface level stuff?
+3. Are they full of it, or do they actually understand the answers that they're giving?
+4. Do they get defensive when you ask them to explain their answers?
+
+A well-conducted system design interview can test a candidate's knowledge of the fundamentals like load balancing, caching, sharding, NoSQL/SQL, OLAP/OLTP, binary protocols like gRPC, distributed tracing, etc.
 
 You can also dig deeper by asking questions like "What protocol is gRPC implemented on top of?" This is a good way to find competent engineers who are able to peel back abstractions when needed.
 
 In a similar vein, constantly asking candidates to explain their answers is a good way to tell apart those who’ve just watched a bunch of system design interviews on YouTube from those who actually understand what they're talking about.
 
-For example, if a candidate says that using an auto-incrementing primary key as an external identifier for a resource is problematic, ask them why that is. On the other hand, if they suggest to use it as an external identifier, ask them to figure out why that can be problematic.
+For example, if a candidate says that using an auto-incrementing primary key as a user-facing ID for a resource is problematic, ask them why that is. If they don't know, you can use that as an opportunity to see if they can figure it out on the fly.
 
 A more generic example of this case is when a candidate confidently suggests `$buzzword` as a solution. Ask them why they suggested `$buzzword`. If they don't have an explanation, that's not a great sign.
 
-### Ability to write clean code
+
+
+### Coding challenge component
+
+**Questions you're trying to answer during this interview:**
+1. Can they write readable code?
+2. Are they able to design good abstractions?
+3. Do they know what good testing looks like (testing pyramid, mocking io and network on the unit test level, etc.)?
+4. Do they get defensive when you ask them to rewrite something?
+5. Do they have good written communication skills?
 
 I'm sure you've heard some version of [Robert C. Martin's](https://en.wikipedia.org/wiki/Robert_C._Martin) quote:
 
@@ -61,11 +77,17 @@ Good naming of variables, functions, classes, etc. Different people have differe
 - **Good documentation** is a good way to see if people’s technical communication skills are up-to-par. It’s especially important to be able to write good documentation if you’re going to be writing a lot of systems that communicate with each other, and where most of the problems occur at integration points.
 - **Unit tests** that catch edge cases and mock things like the filesystem/network cleanly.
 
+
+## Non-technical qualities to look for
+
 ### Curiosity 
 
 Asking candidates to tell you about one or two interesting things they’ve learned, or books they’ve read is a nice way to see if they’re just doing what everyone else is doing, or whether they’re genuinely curious and are learning new things.
 
 Bonus personal [example](https://www.usenix.org/legacy/event/lisa07/tech/full_papers/hamilton/hamilton_html/index.html) - an awesome paper about building web services by [James Hamilton](https://mvdirona.com/jrh/work/) I read a little while ago.
+
+**Summary of what you can learn from this part:**
+1. Are they curious? Maybe you don't care about this part, 
 
 ### Humility
 
@@ -89,22 +111,22 @@ Ask yourself (genuinely), “if they haven’t gone above and beyond at previous
 
 Note that the answer to the above question doesn't have to be clear cut. Maybe you just have a gut feeling from talking to them that they’ll be an amazing employee, and maybe you should trust your gut.
 
-## Red flags to look for
+## Non-technical red flags to watch out for
 
 **Jumping to solutions too quickly.** Distributed systems are big and complex, and making a lot of mistakes needlessly is expensive.
 
 **Not jumping to solutions quickly enough.** Distributed systems are big and complex, and you will make mistakes along the way, so at some point, decisions have to be made.
 Obviously, these last two points are a bit tongue-in-cheek, but this is an extremely important balance to look for in an infra engineer.
 
-**"Ivory-tower architects" or [Architecture Astronauts.](https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/)** The first term is a reference from the book [Release It!](https://www.amazon.com/Release-Production-Ready-Software-Pragmatic-Programmers/dp/0978739213) by Michael Nygard (which I highly recommend) which describes a type of engineer that creates ideals not rooted in reality and then forces those ideals upon all other engineers at their company. The second describes a type of engineer that finds patterns in problems (as all good engineers should), but then over-generalizes these patterns into useless abstractions.
+**"Ivory-tower architects" or [Architecture Astronauts.](https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/)** The first term is a reference from the book [Release It!](https://www.amazon.com/Release-Production-Ready-Software-Pragmatic-Programmers/dp/0978739213) by Michael Nygard, which I highly recommend. It describes a type of engineer that creates ideals not rooted in reality and then forces those ideals upon all other engineers at their company. The second describes a type of engineer that finds patterns in problems (as all good engineers should), but then over-generalizes these patterns into useless abstractions.
 
-While these terms aren't synonymous, they similarly describe a type of engineer that often works too slowly, over-engineers solutions, and has very strong opinions about all tech that things that ultimately don't matter too much (**idk about this last one**).
+While these terms aren't synonymous, they similarly describe a type of engineer that often works too slowly, over-engineers solutions, and has very strong opinions about everything with no consideration of tradeoffs.
 
 I find that these engineers are more common among infrastructure engineers and API designers, whose work is often highly technical, hard to reverse, and stays around for a long time, so there's more potential for over-engineering. I’ve experienced this firsthand multiple times (and I’ve done it myself!), and it ain’t fun:(
 
 A red flag for this is when candidates use a lot of buzzwords and talk about “best practices” with no mention of their downsides or alternatives when suggesting solutions to design problems.
 
-**When something just feels "off."** From my experience, when people feel that something's "off," they're usually right. I once shadowed an interview where the candidate had great experience and technical competence, but for reason, I was just *annoyed* by them. I thought more about why that was, and I realized that they were constantly giving their take on everything, even when neither I or the main interviewer asked for it. I wrote this down in my feedback and gave them a "No Hire," which I felt bad about since I realized this was a relatively strange reason to not hire someone. A few days later, to my surprise, I found out that several other people expressed the same thing, and we ended up not hiring this person.
+**When something just feels "off."** From my experience, when people feel that something's "off," they're usually right. I once shadowed an interview where the candidate had great experience and technical competence, but for some reason, I was just *annoyed* by them. I thought more about why that was, and I realized that they were constantly giving their take on everything, even when neither I or the main interviewer asked for it. I wrote this down in my feedback and gave them a "No Hire," which I felt bad about since I realized this was a relatively strange reason to not hire someone. A few days later, to my surprise, I found out that several other people expressed the same feeling, and we ended up not hiring this person.
 
 
 ### **`$conclusion`**
