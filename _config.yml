@@ -3,7 +3,7 @@ url: https://itsmiki.com
 display_url: itsmiki.com
 repository: mpokryva/resume-template
 title: "Miki Pokryvailo"
-description: "Backend Software Engineer"
+description: "I’m an energetic, easy-going software engineer that thrives on solving ill-defined problems proactively and autonomously."
 
 # Build settings
 markdown: kramdown
@@ -15,7 +15,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Miki Pokryvailo"
-resume_title:                   "Backend Software Engineer" #TODO: Change this.
+resume_title:                   "Backend Software Engineer"
 resume_include_title:           false
 
 # used for the contact button in _layouts/resume.html
