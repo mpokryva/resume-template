@@ -3,7 +3,7 @@
   duration: December 2020 &mdash; Present
   summary: |
     <ul>
-    <li>Working on Madhive’s core API platform, “MadServer,” which is responsible for handling a large percentage of internal and user-facing queries. Using Go, GCP, BigQuery, Postgres, and Swagger.</li>
+    <li>Working on MadHive’s core API platform, “MadServer,” which is responsible for handling a large percentage of internal and user-facing queries. Using Go, GCP, BigQuery, Postgres, and Swagger.</li>
     <li> Designed and independently implemented a service from scratch to continuously sync critical user data from MadHive’s central database to BigQuery. This service needs to ensure perfect data integrity, and the design decisions I made were critical in making this not just possible, but easy to implement and debug.</li>
     <li>Independently came up with and implemented a solution to reduce payload size by 10x for one of MadHive’s slowest and most critical queries in its UI using protobuf <a href="https://developers.google.com/protocol-buffers/docs/reference/csharp/class/google/protobuf/well-known-types/field-mask">field masks</a>.</li>
     </ul>
