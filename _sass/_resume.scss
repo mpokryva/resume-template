@@ -309,6 +309,11 @@ figure {
 	a:visited {
 		color: $accent-color;
 	}
+    ::selection {
+      color: $primary !important;
+      background: white !important;
+      text-shadow: none;
+    }
 	h1,
 	h2,
 	h3,
