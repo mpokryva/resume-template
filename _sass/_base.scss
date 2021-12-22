@@ -29,6 +29,11 @@ a:hover {
   color: $primary;
 }
 
+.nav-link:hover {
+  text-decoration: underline;
+  color: $primary;
+}
+
 .image-link:hover {
   text-decoration: none;
 }
