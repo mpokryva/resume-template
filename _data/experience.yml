@@ -1,6 +1,12 @@
-- company: MadHive, Mountain View, CA 
+- company: Stealth startup, Remote
+  position: Founding Engineer
+  duration: February 2022 &mdash; Present
+  summary: |
+    Building cool stuff :)
+
+- company: MadHive, New York, NY
   position: Backend Software Engineer 
-  duration: December 2020 &mdash; Present
+  duration: December 2020 &mdash; February 2022
   summary: |
     <ul>
     <li>Working on MadHive’s core API platform, “MadServer,” which is responsible for handling a large percentage of internal and user-facing queries. Using Go, GCP, BigQuery, Postgres, and Swagger.</li>
